@@ -1,0 +1,55 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<layout xmlns:android="http://schemas.android.com/apk/res/android" xmlns:tools="http://schemas.android.com/tools">
+    <data>
+        <variable name="listrectangle151RowModel" type="com.khushalsapplication.app.modules.trendingthisweek.data.model.Listrectangle151RowModel"/>
+    </data>
+    <LinearLayout android:id="@+id/linearRowrectangle151"
+        android:layout_height="wrap_content"
+        android:layout_width="match_parent"
+        android:orientation="horizontal" style="@style/groupStylewhite_2">
+        <ImageView android:id="@+id/imageRectangle151"
+            android:layout_height="@dimen/_45pxh"
+            android:layout_marginBottom="@dimen/_6pxv"
+            android:layout_marginStart="@dimen/_27pxh"
+            android:layout_marginTop="@dimen/_5pxv"
+            android:layout_width="@dimen/_51pxh"
+            android:scaleType="fitXY" cornerRadius="@{@dimen/_5pxh}"
+            imageRes="@{@drawable/img_rectangle151_138x149}"
+            tools:ignore="ContentDescription" tools:src="@drawable/img_rectangle151_138x149"/>
+        <LinearLayout android:gravity="start"
+            android:id="@+id/linearColumnlanguage"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="@dimen/_11pxv"
+            android:layout_marginStart="@dimen/_17pxh"
+            android:layout_marginTop="@dimen/_6pxv"
+            android:layout_weight="0.8" android:layout_width="0dp" android:orientation="vertical">
+            <TextView android:ellipsize="end"
+                android:id="@+id/txtLanguage"
+                android:layout_height="wrap_content"
+                android:layout_marginEnd="@dimen/_10pxh"
+                android:layout_width="wrap_content"
+                android:singleLine="true"
+                android:text="@{listrectangle151RowModel.txtLanguage}"
+                style="@style/txtDMSansbold15_3" tools:text="@string/lbl_soup_beet_vegy2"/>
+            <TextView android:ellipsize="end"
+                android:id="@+id/txtLanguageOne"
+                android:layout_height="wrap_content"
+                android:layout_marginEnd="@dimen/_10pxh"
+                android:layout_marginTop="@dimen/_1pxv"
+                android:layout_width="wrap_content"
+                android:singleLine="true"
+                android:text="@{listrectangle151RowModel.txtLanguageOne}"
+                style="@style/txtDMSansmedium13_1" tools:text="@string/msg_chinese_restura"/>
+        </LinearLayout>
+        <ImageView android:id="@+id/imageRectangle117"
+            android:layout_height="@dimen/_17pxh"
+            android:layout_marginBottom="@dimen/_20pxv"
+            android:layout_marginEnd="@dimen/_28pxh"
+            android:layout_marginStart="@dimen/_17pxh"
+            android:layout_marginTop="@dimen/_19pxv"
+            android:layout_width="@dimen/_17pxh"
+            android:scaleType="fitXY"
+            android:src="@drawable/img_rectangle117"
+            tools:ignore="ContentDescription" tools:src="@drawable/img_rectangle117"/>
+    </LinearLayout>
+</layout>

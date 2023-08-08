@@ -1,0 +1,92 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<layout xmlns:android="http://schemas.android.com/apk/res/android" xmlns:tools="http://schemas.android.com/tools">
+    <data>
+        <variable name="ordersRowModel" type="com.khushalsapplication.app.modules.orders.data.model.OrdersRowModel"/>
+    </data>
+    <LinearLayout android:id="@+id/linearRowrectangle135"
+        android:layout_height="wrap_content"
+        android:layout_width="match_parent"
+        android:orientation="horizontal" style="@style/groupStylegray_50">
+        <ImageView android:id="@+id/imageRectangle135"
+            android:layout_height="@dimen/_131pxh"
+            android:layout_marginBottom="@dimen/_16pxv"
+            android:layout_marginStart="@dimen/_23pxh"
+            android:layout_marginTop="@dimen/_8pxv"
+            android:layout_width="@dimen/_134pxh"
+            android:scaleType="fitXY" cornerRadius="@{@dimen/_13pxh}"
+            imageRes="@{@drawable/img_rectangle135}"
+            tools:ignore="ContentDescription" tools:src="@drawable/img_rectangle135"/>
+        <LinearLayout android:gravity="start"
+            android:id="@+id/linearColumnsashimideluxe"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="@dimen/_8pxv"
+            android:layout_marginEnd="@dimen/_51pxh"
+            android:layout_marginStart="@dimen/_21pxh"
+            android:layout_marginTop="@dimen/_10pxv"
+            android:layout_weight="0.6" android:layout_width="0dp" android:orientation="vertical">
+            <TextView android:ellipsize="end"
+                android:id="@+id/txtSashimiDeluxe"
+                android:layout_height="wrap_content"
+                android:layout_marginEnd="@dimen/_10pxh"
+                android:layout_marginStart="@dimen/_1pxh"
+                android:layout_width="match_parent"
+                android:singleLine="true"
+                android:text="@{ordersRowModel.txtSashimiDeluxe}"
+                style="@style/txtDMSansmedium19" tools:text="@string/lbl_sashimi_deluxe"/>
+            <LinearLayout android:gravity="start"
+                android:id="@+id/linearRow1500rs"
+                android:layout_height="wrap_content"
+                android:layout_marginEnd="@dimen/_10pxh"
+                android:layout_marginStart="@dimen/_1pxh"
+                android:layout_width="match_parent" android:orientation="horizontal">
+                <TextView android:ellipsize="end"
+                    android:id="@+id/txt1500rs"
+                    android:layout_height="wrap_content"
+                    android:layout_marginBottom="@dimen/_1pxv"
+                    android:layout_width="wrap_content"
+                    android:singleLine="true"
+                    android:text="@{ordersRowModel.txt1500rs}"
+                    style="@style/txtDMSansbold16" tools:text="@string/lbl_1500rs"/>
+                <TextView android:ellipsize="end"
+                    android:id="@+id/txt250gm"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="@dimen/_28pxh"
+                    android:layout_marginTop="@dimen/_1pxv"
+                    android:layout_width="wrap_content"
+                    android:singleLine="true"
+                    android:text="@{ordersRowModel.txt250gm}"
+                    style="@style/txtDMSansregular16_2" tools:text="@string/lbl_250gm"/>
+            </LinearLayout>
+            <TextView android:id="@+id/txt2pcstunasash"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/_8pxv"
+                android:layout_width="match_parent"
+                android:text="@{ordersRowModel.txt2pcstunasash}"
+                style="@style/txtDMSansregular15" tools:text="@string/msg_2_pcs_tuna_sash"/>
+            <LinearLayout android:gravity="start"
+                android:id="@+id/linearRowcalendar"
+                android:layout_height="wrap_content"
+                android:layout_marginEnd="@dimen/_10pxh"
+                android:layout_marginStart="@dimen/_1pxh"
+                android:layout_marginTop="@dimen/_18pxv"
+                android:layout_width="match_parent" android:orientation="horizontal">
+                <ImageView android:id="@+id/imageCalendar"
+                    android:layout_height="@dimen/_16pxh"
+                    android:layout_marginBottom="@dimen/_7pxv"
+                    android:layout_width="@dimen/_16pxh"
+                    android:scaleType="fitXY"
+                    android:src="@drawable/img_calendar"
+                    tools:ignore="ContentDescription" tools:src="@drawable/img_calendar"/>
+                <TextView android:ellipsize="end"
+                    android:id="@+id/txtTime"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="@dimen/_9pxh"
+                    android:layout_marginTop="@dimen/_1pxv"
+                    android:layout_weight="0.91"
+                    android:layout_width="0dp" android:singleLine="true"
+                    android:text="@{ordersRowModel.txtTime}"
+                    style="@style/txtDMSansregular17_1" tools:text="@string/msg_9_apr_2023_3_2"/>
+            </LinearLayout>
+        </LinearLayout>
+    </LinearLayout>
+</layout>

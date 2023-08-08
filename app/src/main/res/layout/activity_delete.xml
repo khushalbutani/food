@@ -1,0 +1,98 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<layout xmlns:android="http://schemas.android.com/apk/res/android" xmlns:tools="http://schemas.android.com/tools">
+    <data>
+        <variable name="deleteVM" type="com.khushalsapplication.app.modules.delete.data.viewmodel.DeleteVM"/>
+    </data>
+    <LinearLayout android:gravity="center_horizontal"
+        android:id="@+id/linearColumnbinone"
+        android:layout_height="match_parent"
+        android:layout_marginBottom="@dimen/_330pxv"
+        android:layout_marginEnd="@dimen/_20pxh"
+        android:layout_marginStart="@dimen/_26pxh"
+        android:layout_marginTop="@dimen/_137pxv"
+        android:layout_width="match_parent"
+        android:orientation="vertical" style="@style/groupStylewhite_A700">
+        <ScrollView android:clipToPadding="false"
+            android:fillViewport="true" android:gravity="start"
+            android:id="@+id/scrollViewScrollview"
+            android:layout_height="0dp" android:layout_weight="1" android:layout_width="match_parent">
+            <LinearLayout android:gravity="center_horizontal"
+                android:id="@+id/linearDelete"
+                android:layout_height="wrap_content"
+                android:layout_width="match_parent" android:orientation="vertical">
+                <FrameLayout android:id="@+id/frameStackbinone"
+                    android:layout_gravity="center_horizontal"
+                    android:layout_height="@dimen/_184pxv"
+                    android:layout_marginEnd="@dimen/_56pxh"
+                    android:layout_marginStart="@dimen/_56pxh"
+                    android:layout_width="@dimen/_184pxh" style="@style/groupStylecornerRadius_2">
+                    <ImageView android:id="@+id/imageBinOne"
+                        android:layout_gravity="center"
+                        android:layout_height="@dimen/_69pxh"
+                        android:layout_marginHorizontal="@dimen/_40pxh"
+                        android:layout_marginVertical="@dimen/_40pxv"
+                        android:layout_width="@dimen/_69pxh"
+                        android:scaleType="fitXY"
+                        imageRes="@{@drawable/img_bin2}"
+                        tools:ignore="ContentDescription" tools:src="@drawable/img_bin2"/>
+                </FrameLayout>
+                <TextView android:ellipsize="end"
+                    android:gravity="center_horizontal"
+                    android:id="@+id/txtConfirmation"
+                    android:layout_height="wrap_content"
+                    android:layout_marginEnd="@dimen/_56pxh"
+                    android:layout_marginStart="@dimen/_56pxh"
+                    android:layout_marginTop="@dimen/_32pxv"
+                    android:layout_width="match_parent"
+                    android:singleLine="true"
+                    android:text="@{deleteVM.deleteModel.txtConfirmation}"
+                    style="@style/txtDMSansbold42" tools:text="@string/lbl_are_you_sure"/>
+                <TextView android:ellipsize="end"
+                    android:gravity="center_horizontal"
+                    android:id="@+id/txtDeleteyouracc"
+                    android:layout_height="wrap_content"
+                    android:layout_marginEnd="@dimen/_56pxh"
+                    android:layout_marginStart="@dimen/_56pxh"
+                    android:layout_marginTop="@dimen/_21pxv"
+                    android:layout_width="match_parent"
+                    android:singleLine="true"
+                    android:text="@{deleteVM.deleteModel.txtDeleteyouracc}"
+                    style="@style/txtDMSansmedium24_1" tools:text="@string/msg_delete_your_acc2"/>
+                <LinearLayout android:id="@+id/linearRowcancel"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="@dimen/_80pxv"
+                    android:layout_width="match_parent" android:orientation="horizontal">
+                    <androidx.appcompat.widget.AppCompatButton
+                        android:ellipsize="end" android:gravity="center"
+                        android:id="@+id/btnCancel"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="0.5"
+                        android:layout_width="0dp"
+                        android:paddingBottom="@dimen/_13pxv"
+                        android:paddingEnd="@dimen/_30pxh"
+                        android:paddingStart="@dimen/_30pxh"
+                        android:paddingTop="@dimen/_13pxv"
+                        android:singleLine="true"
+                        android:text="@string/lbl_cancel"
+                        android:textAllCaps="false"
+                        style="@style/btnSolidRounded_11" tools:text="@string/lbl_cancel"/>
+                    <androidx.appcompat.widget.AppCompatButton
+                        android:ellipsize="end" android:gravity="center"
+                        android:id="@+id/btnDelete"
+                        android:layout_height="wrap_content"
+                        android:layout_marginStart="@dimen/_28pxh"
+                        android:layout_weight="0.5"
+                        android:layout_width="0dp"
+                        android:paddingBottom="@dimen/_13pxv"
+                        android:paddingEnd="@dimen/_30pxh"
+                        android:paddingStart="@dimen/_30pxh"
+                        android:paddingTop="@dimen/_13pxv"
+                        android:singleLine="true"
+                        android:text="@string/lbl_delete"
+                        android:textAllCaps="false"
+                        style="@style/btnSolidRounded_12" tools:text="@string/lbl_delete"/>
+                </LinearLayout>
+            </LinearLayout>
+        </ScrollView>
+    </LinearLayout>
+</layout>

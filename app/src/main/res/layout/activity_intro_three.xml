@@ -1,0 +1,85 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<layout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto" xmlns:tools="http://schemas.android.com/tools">
+    <data>
+        <variable name="introThreeVM" type="com.khushalsapplication.app.modules.introthree.data.viewmodel.IntroThreeVM"/>
+    </data>
+    <FrameLayout android:id="@+id/frameIntroThree"
+        android:layout_height="match_parent"
+        android:layout_width="match_parent" style="@style/groupStylewhite_A700">
+        <ImageView android:id="@+id/imageImageFive"
+            android:layout_gravity="start"
+            android:layout_height="match_parent"
+            android:layout_width="match_parent"
+            android:scaleType="fitXY" imageRes="@{@drawable/img_image5}"
+            tools:ignore="ContentDescription" tools:src="@drawable/img_image5"/>
+        <ScrollView android:clipToPadding="false"
+            android:fillViewport="true"
+            android:id="@+id/scrollViewScrollview"
+            android:layout_gravity="start" android:layout_height="0dp"
+            android:layout_weight="1" android:layout_width="match_parent">
+            <LinearLayout android:gravity="end"
+                android:id="@+id/linearColumnskip"
+                android:layout_height="wrap_content"
+                android:layout_width="match_parent"
+                android:orientation="vertical" style="@style/groupStyleblack_900_82">
+                <TextView android:ellipsize="end"
+                    android:id="@+id/txtSkip"
+                    android:layout_height="wrap_content"
+                    android:layout_marginEnd="@dimen/_27pxh"
+                    android:layout_marginStart="@dimen/_27pxh"
+                    android:layout_marginTop="@dimen/_21pxv"
+                    android:layout_width="wrap_content"
+                    android:singleLine="true"
+                    android:text="@{introThreeVM.introThreeModel.txtSkip}"
+                    style="@style/txtDMSansbold18" tools:text="@string/lbl_skip"/>
+                <TextView android:gravity="center_horizontal"
+                    android:id="@+id/txtLanguage"
+                    android:layout_height="wrap_content"
+                    android:layout_marginEnd="@dimen/_27pxh"
+                    android:layout_marginStart="@dimen/_27pxh"
+                    android:layout_marginTop="@dimen/_152pxv"
+                    android:layout_width="match_parent"
+                    android:text="@{introThreeVM.introThreeModel.txtLanguage}"
+                    style="@style/txtDMSansbold52" tools:text="@string/msg_order_from_the"/>
+                <TextView android:gravity="start"
+                    android:id="@+id/txtLanguageOne"
+                    android:layout_height="wrap_content"
+                    android:layout_marginEnd="@dimen/_172pxh"
+                    android:layout_marginStart="@dimen/_31pxh"
+                    android:layout_marginTop="@dimen/_19pxv"
+                    android:layout_width="match_parent"
+                    android:text="@{introThreeVM.introThreeModel.txtLanguageOne}"
+                    style="@style/txtDMSansbold18" tools:text="@string/msg_order_with_easy"/>
+                <androidx.appcompat.widget.AppCompatButton
+                    android:ellipsize="end" android:gravity="center"
+                    android:id="@+id/btnGetStarted"
+                    android:layout_height="wrap_content"
+                    android:layout_marginEnd="@dimen/_27pxh"
+                    android:layout_marginStart="@dimen/_27pxh"
+                    android:layout_marginTop="@dimen/_279pxv"
+                    android:layout_width="match_parent"
+                    android:paddingBottom="@dimen/_8pxv"
+                    android:paddingEnd="@dimen/_30pxh"
+                    android:paddingStart="@dimen/_30pxh"
+                    android:paddingTop="@dimen/_8pxv"
+                    android:singleLine="true"
+                    android:text="@string/lbl_get_started"
+                    android:textAllCaps="false"
+                    style="@style/btnSolidRounded" tools:text="@string/lbl_get_started"/>
+
+                <com.asksira.loopingviewpager.indicator.CustomShapePagerIndicator
+                    android:id="@+id/indicatorGroup450"
+                    android:layout_height="wrap_content"
+                    android:layout_marginBottom="@dimen/_61pxv"
+                    android:layout_marginEnd="@dimen/_186pxh"
+                    android:layout_marginStart="@dimen/_186pxh"
+                    android:layout_marginTop="@dimen/_27pxv"
+                    android:layout_width="wrap_content"
+                    app:drawable_normal="@drawable/indicator_unselected_bg_gray_600_aa_radius_8"
+                    app:drawable_selected="@drawable/indicator_selected_bg_white_a700_radius_8"
+                    app:indicator_size="@dimen/_7pxh" app:indicator_spacing="@dimen/_10pxh"/>
+            </LinearLayout>
+        </ScrollView>
+    </FrameLayout>
+</layout>

@@ -1,0 +1,104 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<layout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto" xmlns:tools="http://schemas.android.com/tools">
+    <data>
+        <variable name="accountSettingsVM" type="com.khushalsapplication.app.modules.accountsettings.data.viewmodel.AccountSettingsVM"/>
+    </data>
+    <LinearLayout android:gravity="start"
+        android:id="@+id/linearColumnrectangleninetyfour"
+        android:layout_height="match_parent"
+        android:layout_marginBottom="@dimen/_607pxv"
+        android:layout_marginTop="@dimen/_9pxv"
+        android:layout_width="match_parent"
+        android:orientation="vertical" style="@style/groupStylewhite_A700">
+        <androidx.appcompat.widget.Toolbar
+            android:id="@+id/toolbarToolbar"
+            android:layout_height="wrap_content"
+            android:layout_width="match_parent" app:contentInsetStart="0dp">
+            <FrameLayout android:id="@+id/frameStackrectangleninetyfour"
+                android:layout_height="@dimen/_102pxv" android:layout_width="match_parent">
+                <ImageView android:id="@+id/imageRectangleNinetyFour"
+                    android:layout_gravity="top|start"
+                    android:layout_height="@dimen/_34pxh"
+                    android:layout_marginBottom="@dimen/_10pxv"
+                    android:layout_marginEnd="@dimen/_13pxh"
+                    android:layout_marginStart="@dimen/_13pxh"
+                    android:layout_width="@dimen/_34pxh"
+                    android:scaleType="fitXY"
+                    android:src="@drawable/img_rectangle94"
+                    tools:ignore="ContentDescription" tools:src="@drawable/img_rectangle94"/>
+                <TextView android:ellipsize="end"
+                    android:gravity="top|start"
+                    android:id="@+id/txtGroup355"
+                    android:layout_gravity="bottom|start"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="@dimen/_10pxv"
+                    android:layout_width="match_parent"
+                    android:paddingBottom="@dimen/_1pxv"
+                    android:paddingStart="@dimen/_13pxh"
+                    android:paddingTop="@dimen/_26pxv"
+                    android:singleLine="true"
+                    android:text="@{accountSettingsVM.accountSettingsModel.txtGroup355}"
+                    style="@style/txtSolid_5" tools:text="@string/msg_account_setting2"/>
+            </FrameLayout>
+        </androidx.appcompat.widget.Toolbar>
+        <LinearLayout android:gravity="start"
+            android:id="@+id/linearAccountsetting"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/_14pxv"
+            android:layout_width="match_parent"
+            android:orientation="vertical" style="@style/groupStylewhite_A700">
+            <LinearLayout android:id="@+id/linearRowchangeemail"
+                android:layout_height="wrap_content"
+                android:layout_width="match_parent"
+                android:orientation="horizontal" style="@style/groupStylewhite_4">
+                <TextView android:ellipsize="end"
+                    android:id="@+id/txtChangeemail"
+                    android:layout_height="wrap_content"
+                    android:layout_marginBottom="@dimen/_16pxv"
+                    android:layout_marginStart="@dimen/_16pxh"
+                    android:layout_marginTop="@dimen/_19pxv"
+                    android:layout_weight="0.91"
+                    android:layout_width="0dp" android:singleLine="true"
+                    android:text="@{accountSettingsVM.accountSettingsModel.txtChangeemail}"
+                    style="@style/txtDMSansregular18_1" tools:text="@string/lbl_change_email"/>
+                <ImageView android:id="@+id/imageRectangle273"
+                    android:layout_height="@dimen/_14pxh"
+                    android:layout_marginBottom="@dimen/_23pxv"
+                    android:layout_marginEnd="@dimen/_15pxh"
+                    android:layout_marginStart="@dimen/_283pxh"
+                    android:layout_marginTop="@dimen/_23pxv"
+                    android:layout_width="@dimen/_11pxh"
+                    android:scaleType="fitXY"
+                    android:src="@drawable/img_rectangle273"
+                    tools:ignore="ContentDescription" tools:src="@drawable/img_rectangle273"/>
+            </LinearLayout>
+            <LinearLayout android:id="@+id/linearRowdeleteaccount"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/_14pxv"
+                android:layout_width="match_parent"
+                android:orientation="horizontal" style="@style/groupStylewhite_4">
+                <TextView android:ellipsize="end"
+                    android:id="@+id/txtDeleteaccount"
+                    android:layout_height="wrap_content"
+                    android:layout_marginBottom="@dimen/_18pxv"
+                    android:layout_marginStart="@dimen/_17pxh"
+                    android:layout_marginTop="@dimen/_16pxv"
+                    android:layout_weight="0.91"
+                    android:layout_width="0dp" android:singleLine="true"
+                    android:text="@{accountSettingsVM.accountSettingsModel.txtDeleteaccount}"
+                    style="@style/txtDMSansregular18_1" tools:text="@string/lbl_delete_account"/>
+                <ImageView android:id="@+id/imageRectangle274"
+                    android:layout_height="@dimen/_14pxh"
+                    android:layout_marginBottom="@dimen/_23pxv"
+                    android:layout_marginEnd="@dimen/_15pxh"
+                    android:layout_marginStart="@dimen/_269pxh"
+                    android:layout_marginTop="@dimen/_22pxv"
+                    android:layout_width="@dimen/_11pxh"
+                    android:scaleType="fitXY"
+                    android:src="@drawable/img_rectangle273"
+                    tools:ignore="ContentDescription" tools:src="@drawable/img_rectangle273"/>
+            </LinearLayout>
+        </LinearLayout>
+    </LinearLayout>
+</layout>

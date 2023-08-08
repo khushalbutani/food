@@ -1,0 +1,174 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<layout xmlns:android="http://schemas.android.com/apk/res/android" xmlns:tools="http://schemas.android.com/tools">
+    <data>
+        <variable name="successfullyDeletedVM" type="com.khushalsapplication.app.modules.successfullydeleted.data.viewmodel.SuccessfullyDeletedVM"/>
+    </data>
+    <FrameLayout android:id="@+id/frameStackconfirmation"
+        android:layout_height="match_parent"
+        android:layout_width="match_parent" style="@style/groupStylewhite_A700">
+        <ScrollView android:clipToPadding="false"
+            android:fillViewport="true"
+            android:id="@+id/scrollViewScrollview"
+            android:layout_gravity="start" android:layout_height="0dp"
+            android:layout_weight="1" android:layout_width="match_parent">
+            <FrameLayout android:id="@+id/frameSuccessfullyde"
+                android:layout_height="match_parent" android:layout_width="match_parent">
+                <LinearLayout android:id="@+id/linearColumnbintwo"
+                    android:layout_gravity="top|center"
+                    android:layout_height="wrap_content"
+                    android:layout_marginBottom="@dimen/_139pxv"
+                    android:layout_marginEnd="@dimen/_23pxh"
+                    android:layout_marginStart="@dimen/_23pxh"
+                    android:layout_marginTop="@dimen/_139pxv"
+                    android:layout_width="match_parent" android:orientation="vertical">
+                    <FrameLayout android:id="@+id/frameStackbintwo"
+                        android:layout_gravity="center_horizontal"
+                        android:layout_height="@dimen/_184pxv"
+                        android:layout_marginEnd="@dimen/_56pxh"
+                        android:layout_marginStart="@dimen/_56pxh"
+                        android:layout_width="@dimen/_184pxh" style="@style/groupStylecornerRadius_2">
+                        <ImageView android:id="@+id/imageBinTwo"
+                            android:layout_gravity="center"
+                            android:layout_height="@dimen/_69pxh"
+                            android:layout_marginHorizontal="@dimen/_40pxh"
+                            android:layout_marginVertical="@dimen/_40pxv"
+                            android:layout_width="@dimen/_69pxh"
+                            android:scaleType="fitXY"
+                            imageRes="@{@drawable/img_bin2}"
+                            tools:ignore="ContentDescription" tools:src="@drawable/img_bin2"/>
+                    </FrameLayout>
+                    <TextView android:ellipsize="end"
+                        android:gravity="center_horizontal"
+                        android:id="@+id/txtConfirmation"
+                        android:layout_height="wrap_content"
+                        android:layout_marginEnd="@dimen/_56pxh"
+                        android:layout_marginStart="@dimen/_56pxh"
+                        android:layout_marginTop="@dimen/_32pxv"
+                        android:layout_width="match_parent"
+                        android:singleLine="true"
+                        android:text="@{successfullyDeletedVM.successfullyDeletedModel.txtConfirmation}"
+                        style="@style/txtDMSansbold42" tools:text="@string/lbl_are_you_sure"/>
+                    <TextView android:ellipsize="end"
+                        android:gravity="center_horizontal"
+                        android:id="@+id/txtDeleteyouracc"
+                        android:layout_height="wrap_content"
+                        android:layout_marginEnd="@dimen/_56pxh"
+                        android:layout_marginStart="@dimen/_56pxh"
+                        android:layout_marginTop="@dimen/_21pxv"
+                        android:layout_width="match_parent"
+                        android:singleLine="true"
+                        android:text="@{successfullyDeletedVM.successfullyDeletedModel.txtDeleteyouracc}"
+                        style="@style/txtDMSansmedium24_1" tools:text="@string/msg_delete_your_acc2"/>
+                    <LinearLayout android:id="@+id/linearRowcancel"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="@dimen/_80pxv"
+                        android:layout_width="match_parent" android:orientation="horizontal">
+                        <LinearLayout
+                            android:gravity="center_horizontal"
+                            android:id="@+id/linearColumncancel"
+                            android:layout_height="wrap_content"
+                            android:layout_weight="0.5"
+                            android:layout_width="0dp"
+                            android:orientation="vertical" style="@style/groupStylebluegray_100cornerRadius">
+                            <TextView android:ellipsize="end"
+                                android:gravity="center_horizontal"
+                                android:id="@+id/txtCancel"
+                                android:layout_height="match_parent"
+                                android:layout_marginBottom="@dimen/_13pxv"
+                                android:layout_marginEnd="@dimen/_50pxh"
+                                android:layout_marginStart="@dimen/_50pxh"
+                                android:layout_marginTop="@dimen/_12pxv"
+                                android:layout_width="match_parent"
+                                android:singleLine="true"
+                                android:text="@{successfullyDeletedVM.successfullyDeletedModel.txtCancel}"
+                                style="@style/txtDMSansregular26" tools:text="@string/lbl_cancel"/>
+                        </LinearLayout>
+                        <LinearLayout
+                            android:gravity="center_horizontal"
+                            android:id="@+id/linearColumndelete"
+                            android:layout_height="wrap_content"
+                            android:layout_marginStart="@dimen/_28pxh"
+                            android:layout_weight="0.5"
+                            android:layout_width="0dp"
+                            android:orientation="vertical" style="@style/groupStyleyellow_A700cornerRadius">
+                            <TextView android:ellipsize="end"
+                                android:gravity="center_horizontal"
+                                android:id="@+id/txtDelete"
+                                android:layout_height="match_parent"
+                                android:layout_marginBottom="@dimen/_13pxv"
+                                android:layout_marginEnd="@dimen/_52pxh"
+                                android:layout_marginStart="@dimen/_52pxh"
+                                android:layout_marginTop="@dimen/_12pxv"
+                                android:layout_width="match_parent"
+                                android:singleLine="true"
+                                android:text="@{successfullyDeletedVM.successfullyDeletedModel.txtDelete}"
+                                style="@style/txtDMSansregular26" tools:text="@string/lbl_delete"/>
+                        </LinearLayout>
+                    </LinearLayout>
+                </LinearLayout>
+                <LinearLayout android:id="@+id/linearColumnrectangle364"
+                    android:layout_gravity="start"
+                    android:layout_height="wrap_content"
+                    android:layout_width="match_parent"
+                    android:orientation="vertical" style="@style/groupStyleblack_900_bf">
+                    <FrameLayout
+                        android:id="@+id/frameStackrectangle364"
+                        android:layout_gravity="end"
+                        android:layout_height="@dimen/_184pxv"
+                        android:layout_marginEnd="@dimen/_112pxh"
+                        android:layout_marginStart="@dimen/_112pxh"
+                        android:layout_marginTop="@dimen/_129pxv"
+                        android:layout_width="@dimen/_184pxh" style="@style/groupStylecornerRadius_2">
+                        <ImageView android:id="@+id/imageRectangle364"
+                            android:layout_gravity="center"
+                            android:layout_height="@dimen/_67pxh"
+                            android:layout_marginHorizontal="@dimen/_40pxh"
+                            android:layout_marginVertical="@dimen/_40pxv"
+                            android:layout_width="@dimen/_88pxh"
+                            android:scaleType="fitXY"
+                            imageRes="@{@drawable/img_rectangle364}"
+                            tools:ignore="ContentDescription" tools:src="@drawable/img_rectangle364"/>
+                    </FrameLayout>
+                    <TextView android:ellipsize="end"
+                        android:gravity="center_horizontal"
+                        android:id="@+id/txtSuccess"
+                        android:layout_height="wrap_content"
+                        android:layout_marginEnd="@dimen/_69pxh"
+                        android:layout_marginStart="@dimen/_69pxh"
+                        android:layout_marginTop="@dimen/_56pxv"
+                        android:layout_width="match_parent"
+                        android:singleLine="true"
+                        android:text="@{successfullyDeletedVM.successfullyDeletedModel.txtSuccess}"
+                        style="@style/txtDMSansbold58" tools:text="@string/lbl_success"/>
+                    <TextView android:gravity="center_horizontal"
+                        android:id="@+id/txtYouraccountwa"
+                        android:layout_height="wrap_content"
+                        android:layout_marginEnd="@dimen/_69pxh"
+                        android:layout_marginStart="@dimen/_69pxh"
+                        android:layout_marginTop="@dimen/_38pxv"
+                        android:layout_width="match_parent"
+                        android:text="@{successfullyDeletedVM.successfullyDeletedModel.txtYouraccountwa}"
+                        style="@style/txtDMSansbold31" tools:text="@string/msg_your_account_wa"/>
+                    <androidx.appcompat.widget.AppCompatButton
+                        android:ellipsize="end" android:gravity="center"
+                        android:id="@+id/btnOk"
+                        android:layout_gravity="center_horizontal"
+                        android:layout_height="@dimen/_70pxv"
+                        android:layout_marginBottom="@dimen/_20pxv"
+                        android:layout_marginEnd="@dimen/_69pxh"
+                        android:layout_marginStart="@dimen/_69pxh"
+                        android:layout_marginTop="@dimen/_92pxv"
+                        android:layout_width="@dimen/_170pxh"
+                        android:paddingBottom="@dimen/_3pxv"
+                        android:paddingEnd="@dimen/_30pxh"
+                        android:paddingStart="@dimen/_30pxh"
+                        android:paddingTop="@dimen/_3pxv"
+                        android:singleLine="true"
+                        android:text="@string/lbl_ok"
+                        android:textAllCaps="false"
+                        style="@style/btnSolidRounded_10" tools:text="@string/lbl_ok"/>
+                </LinearLayout>
+            </FrameLayout>
+        </ScrollView>
+    </FrameLayout>
+</layout>

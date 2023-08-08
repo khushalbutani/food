@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<layout xmlns:android="http://schemas.android.com/apk/res/android" xmlns:tools="http://schemas.android.com/tools">
+    <data>
+        <variable name="listbigdoubleRowModel" type="com.khushalsapplication.app.modules.browse.data.model.ListbigdoubleRowModel"/>
+    </data>
+    <LinearLayout android:id="@+id/linearRowbigdouble"
+        android:layout_height="wrap_content"
+        android:layout_width="match_parent" android:orientation="horizontal">
+        <TextView android:ellipsize="end" android:id="@+id/txtBigDouble"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/_1pxv"
+            android:layout_weight="0.28" android:layout_width="0dp"
+            android:singleLine="true"
+            android:text="@{listbigdoubleRowModel.txtBigDouble}"
+            style="@style/txtDMSansbold15_3" tools:text="@string/lbl_big_double"/>
+        <TextView android:ellipsize="end"
+            android:id="@+id/txtFranchFries"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="@dimen/_1pxv"
+            android:layout_marginStart="@dimen/_78pxh"
+            android:layout_weight="0.32" android:layout_width="0dp"
+            android:singleLine="true"
+            android:text="@{listbigdoubleRowModel.txtFranchFries}"
+            style="@style/txtDMSansbold15_3" tools:text="@string/lbl_franch_fries"/>
+        <TextView android:ellipsize="end"
+            android:id="@+id/txtGreenRaintCak"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="@dimen/_1pxv"
+            android:layout_marginStart="@dimen/_67pxh"
+            android:layout_weight="0.4" android:layout_width="0dp"
+            android:singleLine="true"
+            android:text="@{listbigdoubleRowModel.txtGreenRaintCak}"
+            style="@style/txtDMSansbold15_3" tools:text="@string/msg_green_raint_cak"/>
+    </LinearLayout>
+</layout>

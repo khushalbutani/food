@@ -1,0 +1,103 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<layout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto" xmlns:tools="http://schemas.android.com/tools">
+    <data>
+        <variable name="searchVM" type="com.khushalsapplication.app.modules.search.data.viewmodel.SearchVM"/>
+    </data>
+    <LinearLayout android:gravity="center_horizontal"
+        android:id="@+id/linearColumnrectangle145"
+        android:layout_height="match_parent"
+        android:layout_marginBottom="@dimen/_111pxv"
+        android:layout_marginTop="@dimen/_12pxv"
+        android:layout_width="match_parent"
+        android:orientation="vertical" style="@style/groupStylewhite_A700">
+        <androidx.appcompat.widget.Toolbar
+            android:gravity="center_horizontal"
+            android:id="@+id/toolbarToolbar"
+            android:layout_height="wrap_content"
+            android:layout_marginEnd="@dimen/_22pxh"
+            android:layout_marginStart="@dimen/_25pxh"
+            android:layout_width="match_parent" app:contentInsetStart="0dp">
+            <LinearLayout android:id="@+id/linearRowcancel"
+                android:layout_height="wrap_content"
+                android:layout_width="match_parent" android:orientation="horizontal">
+                <LinearLayout android:id="@+id/linearRowclose"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="0.86"
+                    android:layout_width="0dp"
+                    android:orientation="horizontal" style="@style/groupStylebluegray_1">
+                    <LinearLayout
+                        android:id="@+id/linearRowrectangle145"
+                        android:layout_height="wrap_content"
+                        android:layout_marginBottom="@dimen/_3pxv"
+                        android:layout_marginStart="@dimen/_11pxh"
+                        android:layout_marginTop="@dimen/_4pxv"
+                        android:layout_weight="0.9"
+                        android:layout_width="0dp" android:orientation="horizontal">
+                        <ImageView android:id="@+id/imageRectangle145"
+                            android:layout_height="@dimen/_23pxh"
+                            android:layout_marginBottom="@dimen/_5pxv"
+                            android:layout_marginTop="@dimen/_3pxv"
+                            android:layout_width="@dimen/_23pxh"
+                            android:scaleType="fitXY"
+                            android:src="@drawable/img_rectangle145"
+                            tools:ignore="ContentDescription" tools:src="@drawable/img_rectangle145"/>
+                        <TextView android:ellipsize="end"
+                            android:id="@+id/txtSearch"
+                            android:layout_height="wrap_content"
+                            android:layout_marginStart="@dimen/_16pxh"
+                            android:layout_weight="0.78"
+                            android:layout_width="0dp"
+                            android:singleLine="true"
+                            android:text="@{searchVM.searchModel.txtSearch}"
+                            style="@style/txtDMSansbold24_1" tools:text="@string/lbl_search"/>
+                    </LinearLayout>
+                    <ImageView android:id="@+id/imageClose"
+                        android:layout_height="@dimen/_13pxh"
+                        android:layout_marginBottom="@dimen/_13pxv"
+                        android:layout_marginEnd="@dimen/_12pxh"
+                        android:layout_marginStart="@dimen/_163pxh"
+                        android:layout_marginTop="@dimen/_14pxv"
+                        android:layout_width="@dimen/_13pxh"
+                        android:scaleType="fitXY"
+                        android:src="@drawable/img_close"
+                        tools:ignore="ContentDescription" tools:src="@drawable/img_close"/>
+                </LinearLayout>
+                <TextView android:ellipsize="end"
+                    android:id="@+id/txtCancel"
+                    android:layout_height="wrap_content"
+                    android:layout_marginBottom="@dimen/_5pxv"
+                    android:layout_marginStart="@dimen/_10pxh"
+                    android:layout_marginTop="@dimen/_13pxv"
+                    android:layout_weight="0.14"
+                    android:layout_width="0dp" android:singleLine="true"
+                    android:text="@{searchVM.searchModel.txtCancel}"
+                    style="@style/txtDMSansbold16_1" tools:text="@string/lbl_cancel"/>
+            </LinearLayout>
+        </androidx.appcompat.widget.Toolbar>
+        <LinearLayout android:id="@+id/linearColumnrecent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/_38pxv"
+            android:layout_width="match_parent"
+            android:orientation="vertical" style="@style/groupStylewhite_A700">
+            <TextView android:ellipsize="end"
+                android:id="@+id/txtRecent"
+                android:layout_gravity="start"
+                android:layout_height="wrap_content"
+                android:layout_marginEnd="@dimen/_19pxh"
+                android:layout_marginStart="@dimen/_19pxh"
+                android:layout_width="wrap_content"
+                android:singleLine="true"
+                android:text="@{searchVM.searchModel.txtRecent}"
+                style="@style/txtDMSansbold27" tools:text="@string/lbl_recent"/>
+            <androidx.recyclerview.widget.RecyclerView
+                android:gravity="start" android:id="@+id/recyclerSearch"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/_1pxv"
+                android:layout_width="match_parent"
+                android:orientation="vertical"
+                app:layoutManager="androidx.recyclerview.widget.LinearLayoutManager"
+                itemSpace="@{@dimen/_9pxh}" tools:itemCount="9" tools:listitem="@layout/row_search"/>
+        </LinearLayout>
+    </LinearLayout>
+</layout>

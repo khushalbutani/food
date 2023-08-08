@@ -1,0 +1,51 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<layout xmlns:android="http://schemas.android.com/apk/res/android" xmlns:tools="http://schemas.android.com/tools">
+    <data>
+        <variable name="notificationsRowModel" type="com.khushalsapplication.app.modules.notifications.data.model.NotificationsRowModel"/>
+    </data>
+    <LinearLayout android:id="@+id/linearRowrectanglefortyfour"
+        android:layout_height="wrap_content"
+        android:layout_width="match_parent"
+        android:orientation="horizontal" style="@style/groupStylewhite_2">
+        <ImageView android:id="@+id/imageRectangleFortyFour"
+            android:layout_height="@dimen/_91pxh"
+            android:layout_marginBottom="@dimen/_10pxv"
+            android:layout_marginStart="@dimen/_26pxh"
+            android:layout_marginTop="@dimen/_6pxv"
+            android:layout_width="@dimen/_110pxh"
+            android:scaleType="fitXY" cornerRadius="@{@dimen/_13pxh}"
+            imageRes="@{@drawable/img_rectangle44}"
+            tools:ignore="ContentDescription" tools:src="@drawable/img_rectangle44"/>
+        <LinearLayout android:gravity="start"
+            android:id="@+id/linearColumnplanninghelps"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="@dimen/_9pxv"
+            android:layout_marginEnd="@dimen/_24pxh"
+            android:layout_marginStart="@dimen/_14pxh"
+            android:layout_marginTop="@dimen/_5pxv"
+            android:layout_weight="0.7" android:layout_width="0dp" android:orientation="vertical">
+            <TextView android:ellipsize="end"
+                android:id="@+id/txtPlanninghelps"
+                android:layout_height="wrap_content"
+                android:layout_marginEnd="@dimen/_10pxh"
+                android:layout_width="match_parent"
+                android:singleLine="true"
+                android:text="@{notificationsRowModel.txtPlanninghelps}"
+                style="@style/txtDMSansbold18_1" tools:text="@string/msg_planning_helps"/>
+            <TextView android:id="@+id/txtManypeopleund"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/_6pxv"
+                android:layout_width="match_parent"
+                android:text="@{notificationsRowModel.txtManypeopleund}"
+                style="@style/txtDMSansbold15" tools:text="@string/msg_many_people_und"/>
+            <TextView android:ellipsize="end" android:id="@+id/txtTime"
+                android:layout_height="wrap_content"
+                android:layout_marginEnd="@dimen/_10pxh"
+                android:layout_marginTop="@dimen/_7pxv"
+                android:layout_width="wrap_content"
+                android:singleLine="true"
+                android:text="@{notificationsRowModel.txtTime}"
+                style="@style/txtDMSansbold13" tools:text="@string/lbl_23_mins_ago"/>
+        </LinearLayout>
+    </LinearLayout>
+</layout>

@@ -1,0 +1,55 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<layout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto" xmlns:tools="http://schemas.android.com/tools">
+    <data>
+        <variable name="trendingThisWeekVM" type="com.khushalsapplication.app.modules.trendingthisweek.data.viewmodel.TrendingThisWeekVM"/>
+    </data>
+    <LinearLayout android:gravity="center_horizontal"
+        android:id="@+id/linearColumnrectangleninetyfour"
+        android:layout_height="match_parent"
+        android:layout_marginBottom="@dimen/_6pxv"
+        android:layout_marginTop="@dimen/_11pxv"
+        android:layout_width="match_parent"
+        android:orientation="vertical" style="@style/groupStylewhite_A700">
+        <androidx.core.widget.NestedScrollView
+            android:clipToPadding="false" android:fillViewport="true"
+            android:gravity="start"
+            android:id="@+id/scrollViewScrollview"
+            android:layout_height="0dp" android:layout_weight="1" android:layout_width="match_parent">
+            <LinearLayout android:id="@+id/linearTrendingthisw"
+                android:layout_height="wrap_content"
+                android:layout_width="match_parent" android:orientation="vertical">
+                <ImageView android:id="@+id/imageRectangleNinetyFour"
+                    android:layout_gravity="start"
+                    android:layout_height="@dimen/_34pxh"
+                    android:layout_marginEnd="@dimen/_10pxh"
+                    android:layout_marginStart="@dimen/_10pxh"
+                    android:layout_width="@dimen/_34pxh"
+                    android:scaleType="fitXY"
+                    android:src="@drawable/img_rectangle94"
+                    tools:ignore="ContentDescription" tools:src="@drawable/img_rectangle94"/>
+                <TextView android:ellipsize="end"
+                    android:gravity="center_horizontal"
+                    android:id="@+id/txtTrendingthisw"
+                    android:layout_height="wrap_content"
+                    android:layout_marginEnd="@dimen/_10pxh"
+                    android:layout_marginStart="@dimen/_10pxh"
+                    android:layout_marginTop="@dimen/_16pxv"
+                    android:layout_width="match_parent"
+                    android:singleLine="true"
+                    android:text="@{trendingThisWeekVM.trendingThisWeekModel.txtTrendingthisw}"
+                    style="@style/txtDMSansbold42" tools:text="@string/msg_trending_this_w"/>
+                <androidx.recyclerview.widget.RecyclerView
+                    android:gravity="start"
+                    android:id="@+id/recyclerListrectangle151"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="@dimen/_7pxv"
+                    android:layout_width="match_parent"
+                    android:nestedScrollingEnabled="false"
+                    android:orientation="vertical"
+                    app:layoutManager="androidx.recyclerview.widget.LinearLayoutManager"
+                    itemSpace="@{@dimen/_6pxh}" tools:itemCount="12" tools:listitem="@layout/row_listrectangle151"/>
+            </LinearLayout>
+        </androidx.core.widget.NestedScrollView>
+    </LinearLayout>
+</layout>

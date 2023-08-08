@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<layout xmlns:android="http://schemas.android.com/apk/res/android" xmlns:tools="http://schemas.android.com/tools">
+    <data>
+        <variable name="listriverbambooRowModel" type="com.khushalsapplication.app.modules.browse.data.model.ListriverbambooRowModel"/>
+    </data>
+    <LinearLayout android:id="@+id/linearRowriverbamboo"
+        android:layout_height="wrap_content"
+        android:layout_width="match_parent" android:orientation="horizontal">
+        <TextView android:ellipsize="end"
+            android:id="@+id/txtRiverBamboo"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/_2pxv"
+            android:layout_weight="0.42" android:layout_width="0dp"
+            android:singleLine="true"
+            android:text="@{listriverbambooRowModel.txtRiverBamboo}"
+            style="@style/txtDMSansbold15_3" tools:text="@string/lbl_river_bamboo"/>
+        <TextView android:ellipsize="end"
+            android:id="@+id/txtBrooksMotor"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="@dimen/_2pxv"
+            android:layout_marginStart="@dimen/_68pxh"
+            android:layout_weight="0.35" android:layout_width="0dp"
+            android:singleLine="true"
+            android:text="@{listriverbambooRowModel.txtBrooksMotor}"
+            style="@style/txtDMSansbold15_3" tools:text="@string/lbl_brooks_motor"/>
+        <TextView android:ellipsize="end" android:id="@+id/txtStarbuks"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="@dimen/_1pxv"
+            android:layout_marginStart="@dimen/_80pxh"
+            android:layout_marginTop="@dimen/_1pxv"
+            android:layout_weight="0.22" android:layout_width="0dp"
+            android:singleLine="true"
+            android:text="@{listriverbambooRowModel.txtStarbuks}"
+            style="@style/txtDMSansbold15_3" tools:text="@string/lbl_starbuks"/>
+    </LinearLayout>
+</layout>

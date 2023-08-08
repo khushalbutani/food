@@ -1,0 +1,43 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<layout xmlns:android="http://schemas.android.com/apk/res/android" xmlns:tools="http://schemas.android.com/tools">
+    <data>
+        <variable name="searchRowModel" type="com.khushalsapplication.app.modules.search.data.model.SearchRowModel"/>
+    </data>
+    <LinearLayout android:id="@+id/linearRowrectangle200"
+        android:layout_height="wrap_content"
+        android:layout_width="match_parent"
+        android:orientation="horizontal" style="@style/groupStylewhite_5">
+        <ImageView android:id="@+id/imageRectangle200"
+            android:layout_height="@dimen/_45pxh"
+            android:layout_marginBottom="@dimen/_10pxv"
+            android:layout_marginStart="@dimen/_19pxh"
+            android:layout_marginTop="@dimen/_7pxv"
+            android:layout_width="@dimen/_53pxh"
+            android:scaleType="fitXY" cornerRadius="@{@dimen/_3pxh}"
+            imageRes="@{@drawable/img_rectangle200_45x53}"
+            tools:ignore="ContentDescription" tools:src="@drawable/img_rectangle200_45x53"/>
+        <LinearLayout android:gravity="start"
+            android:id="@+id/linearColumnpavbhaji"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="@dimen/_10pxv"
+            android:layout_marginEnd="@dimen/_247pxh"
+            android:layout_marginStart="@dimen/_16pxh"
+            android:layout_marginTop="@dimen/_7pxv"
+            android:layout_weight="0.64" android:layout_width="0dp" android:orientation="vertical">
+            <TextView android:ellipsize="end"
+                android:id="@+id/txtPavBhaji"
+                android:layout_height="wrap_content"
+                android:layout_width="match_parent"
+                android:singleLine="true"
+                android:text="@{searchRowModel.txtPavBhaji}"
+                style="@style/txtDMSansbold22" tools:text="@string/lbl_pav_bhaji"/>
+            <TextView android:ellipsize="end" android:id="@+id/txt120rs"
+                android:layout_height="wrap_content"
+                android:layout_marginEnd="@dimen/_10pxh"
+                android:layout_width="wrap_content"
+                android:singleLine="true"
+                android:text="@{searchRowModel.txt120rs}"
+                style="@style/txtDMSansbold18_3" tools:text="@string/lbl_120rs"/>
+        </LinearLayout>
+    </LinearLayout>
+</layout>

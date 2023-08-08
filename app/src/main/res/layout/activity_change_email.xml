@@ -1,0 +1,52 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<layout xmlns:android="http://schemas.android.com/apk/res/android" xmlns:tools="http://schemas.android.com/tools">
+    <data>
+        <variable name="changeEmailVM" type="com.khushalsapplication.app.modules.changeemail.data.viewmodel.ChangeEmailVM"/>
+    </data>
+    <LinearLayout android:gravity="center_horizontal"
+        android:id="@+id/linearColumnrectangleninetyfour"
+        android:layout_height="match_parent"
+        android:layout_marginBottom="@dimen/_688pxv"
+        android:layout_marginEnd="@dimen/_26pxh"
+        android:layout_marginStart="@dimen/_13pxh"
+        android:layout_marginTop="@dimen/_9pxv"
+        android:layout_width="match_parent"
+        android:orientation="vertical" style="@style/groupStylewhite_A700">
+        <ScrollView android:clipToPadding="false"
+            android:fillViewport="true" android:gravity="start"
+            android:id="@+id/scrollViewScrollview"
+            android:layout_height="0dp" android:layout_weight="1" android:layout_width="match_parent">
+            <LinearLayout android:id="@+id/linearChangeemail"
+                android:layout_height="wrap_content"
+                android:layout_width="match_parent" android:orientation="vertical">
+                <ImageView android:id="@+id/imageRectangleNinetyFour"
+                    android:layout_gravity="start"
+                    android:layout_height="@dimen/_34pxh"
+                    android:layout_marginEnd="@dimen/_10pxh"
+                    android:layout_width="@dimen/_34pxh"
+                    android:scaleType="fitXY"
+                    android:src="@drawable/img_rectangle94"
+                    tools:ignore="ContentDescription" tools:src="@drawable/img_rectangle94"/>
+                <TextView android:ellipsize="end"
+                    android:id="@+id/txtChangeemail"
+                    android:layout_gravity="start"
+                    android:layout_height="wrap_content"
+                    android:layout_marginEnd="@dimen/_10pxh"
+                    android:layout_marginStart="@dimen/_6pxh"
+                    android:layout_marginTop="@dimen/_12pxv"
+                    android:layout_width="wrap_content"
+                    android:singleLine="true"
+                    android:text="@{changeEmailVM.changeEmailModel.txtChangeemail}"
+                    style="@style/txtDMSansregular30" tools:text="@string/lbl_change_email"/>
+                <TextView android:gravity="center_horizontal"
+                    android:id="@+id/txtDescription"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="@dimen/_6pxh"
+                    android:layout_marginTop="@dimen/_13pxv"
+                    android:layout_width="match_parent"
+                    android:text="@{changeEmailVM.changeEmailModel.txtDescription}"
+                    style="@style/txtDMSansregular16_1" tools:text="@string/msg_to_change_your"/>
+            </LinearLayout>
+        </ScrollView>
+    </LinearLayout>
+</layout>

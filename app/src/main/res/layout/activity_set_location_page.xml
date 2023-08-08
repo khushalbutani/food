@@ -1,0 +1,111 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<layout xmlns:android="http://schemas.android.com/apk/res/android" xmlns:tools="http://schemas.android.com/tools">
+    <data>
+        <variable name="setLocationPageVM" type="com.khushalsapplication.app.modules.setlocationpage.data.viewmodel.SetLocationPageVM"/>
+    </data>
+    <LinearLayout android:gravity="center_horizontal"
+        android:id="@+id/linearColumnlocation"
+        android:layout_height="match_parent"
+        android:layout_marginBottom="@dimen/_278pxv"
+        android:layout_marginEnd="@dimen/_62pxh"
+        android:layout_marginStart="@dimen/_36pxh"
+        android:layout_marginTop="@dimen/_73pxv"
+        android:layout_width="match_parent"
+        android:orientation="vertical" style="@style/groupStylewhite_A700">
+        <ScrollView android:clipToPadding="false"
+            android:fillViewport="true" android:gravity="start"
+            android:id="@+id/scrollViewScrollview"
+            android:layout_height="0dp" android:layout_weight="1" android:layout_width="match_parent">
+            <LinearLayout android:gravity="start"
+                android:id="@+id/linearSetlocationpa"
+                android:layout_height="wrap_content"
+                android:layout_width="match_parent" android:orientation="vertical">
+                <FrameLayout android:id="@+id/frameStacklocation"
+                    android:layout_height="@dimen/_76pxv"
+                    android:layout_marginEnd="@dimen/_10pxh"
+                    android:layout_marginStart="@dimen/_3pxh" android:layout_width="@dimen/_58pxh">
+                    <ImageView android:id="@+id/imageLocation"
+                        android:layout_gravity="start"
+                        android:layout_height="@dimen/_76pxh"
+                        android:layout_width="@dimen/_58pxh"
+                        android:scaleType="fitXY"
+                        android:src="@drawable/img_location"
+                        tools:ignore="ContentDescription" tools:src="@drawable/img_location"/>
+                    <ImageView android:id="@+id/imageRestaurantOne"
+                        android:layout_gravity="top|start"
+                        android:layout_height="@dimen/_39pxh"
+                        android:layout_marginBottom="@dimen/_16pxv"
+                        android:layout_marginEnd="@dimen/_13pxh"
+                        android:layout_marginStart="@dimen/_13pxh"
+                        android:layout_marginTop="@dimen/_16pxv"
+                        android:layout_width="@dimen/_28pxh"
+                        android:scaleType="fitXY"
+                        android:src="@drawable/img_restaurant1"
+                        tools:ignore="ContentDescription" tools:src="@drawable/img_restaurant1"/>
+                </FrameLayout>
+                <TextView android:id="@+id/txtHinicetomee"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="@dimen/_62pxv"
+                    android:layout_width="match_parent"
+                    android:text="@{setLocationPageVM.setLocationPageModel.txtHinicetomee}"
+                    style="@style/txtDMSansbold47" tools:text="@string/msg_hi_nice_to_mee"/>
+                <TextView android:id="@+id/txtSetyourlocati"
+                    android:layout_height="wrap_content"
+                    android:layout_marginEnd="@dimen/_10pxh"
+                    android:layout_marginStart="@dimen/_3pxh"
+                    android:layout_marginTop="@dimen/_17pxv"
+                    android:layout_width="match_parent"
+                    android:text="@{setLocationPageVM.setLocationPageModel.txtSetyourlocati}"
+                    style="@style/txtDMSansmedium16_3" tools:text="@string/msg_set_your_locati"/>
+                <LinearLayout android:gravity="start"
+                    android:id="@+id/linearRowrectangleeleven"
+                    android:layout_height="wrap_content"
+                    android:layout_marginEnd="@dimen/_9pxh"
+                    android:layout_marginStart="@dimen/_3pxh"
+                    android:layout_marginTop="@dimen/_29pxv"
+                    android:layout_width="match_parent"
+                    android:orientation="horizontal" style="@style/groupStylewhite_A700cornerRadius">
+                    <ImageView android:id="@+id/imageRectangleEleven"
+                        android:layout_height="@dimen/_31pxh"
+                        android:layout_marginBottom="@dimen/_9pxv"
+                        android:layout_marginStart="@dimen/_40pxh"
+                        android:layout_marginTop="@dimen/_10pxv"
+                        android:layout_width="@dimen/_31pxh"
+                        android:scaleType="fitXY"
+                        android:src="@drawable/img_rectangle11"
+                        tools:ignore="ContentDescription" tools:src="@drawable/img_rectangle11"/>
+                    <TextView android:ellipsize="end"
+                        android:id="@+id/txtUsecurrentloc"
+                        android:layout_height="wrap_content"
+                        android:layout_marginBottom="@dimen/_9pxv"
+                        android:layout_marginEnd="@dimen/_51pxh"
+                        android:layout_marginStart="@dimen/_18pxh"
+                        android:layout_marginTop="@dimen/_13pxv"
+                        android:layout_weight="0.85"
+                        android:layout_width="0dp"
+                        android:singleLine="true"
+                        android:text="@{setLocationPageVM.setLocationPageModel.txtUsecurrentloc}"
+                        style="@style/txtDMSansmedium20_1" tools:text="@string/msg_use_current_loc"/>
+                </LinearLayout>
+                <TextView android:id="@+id/txtWeonlyaccess"
+                    android:layout_height="wrap_content"
+                    android:layout_marginEnd="@dimen/_10pxh"
+                    android:layout_marginStart="@dimen/_3pxh"
+                    android:layout_marginTop="@dimen/_20pxv"
+                    android:layout_width="match_parent"
+                    android:text="@{setLocationPageVM.setLocationPageModel.txtWeonlyaccess}"
+                    style="@style/txtDMSansmedium16_1" tools:text="@string/msg_we_only_access"/>
+                <TextView android:ellipsize="end"
+                    android:id="@+id/txtOrsetyourloc"
+                    android:layout_height="wrap_content"
+                    android:layout_marginEnd="@dimen/_10pxh"
+                    android:layout_marginStart="@dimen/_3pxh"
+                    android:layout_marginTop="@dimen/_36pxv"
+                    android:layout_width="match_parent"
+                    android:singleLine="true"
+                    android:text="@{setLocationPageVM.setLocationPageModel.txtOrsetyourloc}"
+                    style="@style/txtDMSansmedium16" tools:text="@string/msg_or_set_your_loc"/>
+            </LinearLayout>
+        </ScrollView>
+    </LinearLayout>
+</layout>
