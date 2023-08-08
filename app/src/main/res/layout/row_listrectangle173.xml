@@ -1,0 +1,51 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<layout xmlns:android="http://schemas.android.com/apk/res/android" xmlns:tools="http://schemas.android.com/tools">
+    <data>
+        <variable name="listrectangle173RowModel" type="com.khushalsapplication.app.modules.browse.data.model.Listrectangle173RowModel"/>
+    </data>
+    <FrameLayout android:id="@+id/frameStackrectangle173"
+        android:layout_height="wrap_content" android:layout_width="@dimen/_156pxh">
+        <ImageView android:id="@+id/imageRectangle173"
+            android:layout_gravity="start"
+            android:layout_height="@dimen/_210pxh"
+            android:layout_width="@dimen/_156pxh"
+            android:scaleType="fitXY" cornerRadius="@{@dimen/_10pxh}"
+            imageRes="@{@drawable/img_rectangle173}"
+            tools:ignore="ContentDescription" tools:src="@drawable/img_rectangle173"/>
+        <LinearLayout android:id="@+id/linearColumnnewly"
+            android:layout_gravity="start"
+            android:layout_height="wrap_content"
+            android:layout_width="match_parent"
+            android:orientation="vertical" style="@style/groupStyleblack_900_77cornerRadius">
+            <TextView android:ellipsize="end" android:id="@+id/txtNewly"
+                android:layout_height="wrap_content"
+                android:layout_marginEnd="@dimen/_19pxh"
+                android:layout_marginStart="@dimen/_19pxh"
+                android:layout_marginTop="@dimen/_114pxv"
+                android:layout_width="wrap_content"
+                android:singleLine="true"
+                android:text="@{listrectangle173RowModel.txtNewly}"
+                style="@style/txtDMSansbold18" tools:text="@string/lbl_newly"/>
+            <TextView android:ellipsize="end"
+                android:id="@+id/txtOpened"
+                android:layout_height="wrap_content"
+                android:layout_marginEnd="@dimen/_19pxh"
+                android:layout_marginStart="@dimen/_19pxh"
+                android:layout_width="wrap_content"
+                android:singleLine="true"
+                android:text="@{listrectangle173RowModel.txtOpened}"
+                style="@style/txtDMSansbold18" tools:text="@string/lbl_opened"/>
+            <TextView android:ellipsize="end"
+                android:id="@+id/txtReviewCounter"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="@dimen/_26pxv"
+                android:layout_marginEnd="@dimen/_19pxh"
+                android:layout_marginStart="@dimen/_19pxh"
+                android:layout_marginTop="@dimen/_1pxv"
+                android:layout_width="wrap_content"
+                android:singleLine="true"
+                android:text="@{listrectangle173RowModel.txtReviewCounter}"
+                style="@style/txtDMSansbold17_2" tools:text="@string/lbl_23_review"/>
+        </LinearLayout>
+    </FrameLayout>
+</layout>

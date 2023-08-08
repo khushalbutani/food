@@ -1,0 +1,186 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<layout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto" xmlns:tools="http://schemas.android.com/tools">
+    <data>
+        <variable name="japaneseVM" type="com.khushalsapplication.app.modules.japanese.data.viewmodel.JapaneseVM"/>
+    </data>
+    <LinearLayout android:gravity="start"
+        android:id="@+id/linearColumnrectangleseventyseven"
+        android:layout_height="match_parent"
+        android:layout_marginBottom="@dimen/_113pxv"
+        android:layout_marginTop="@dimen/_17pxv"
+        android:layout_width="match_parent"
+        android:orientation="vertical" style="@style/groupStylewhite_A700">
+        <androidx.appcompat.widget.Toolbar
+            android:id="@+id/toolbarToolbar"
+            android:layout_height="wrap_content"
+            android:layout_marginEnd="@dimen/_10pxh"
+            android:layout_width="match_parent" app:contentInsetStart="0dp">
+            <LinearLayout
+                android:id="@+id/linearRowrectangleseventyseven"
+                android:layout_height="wrap_content"
+                android:layout_width="match_parent" android:orientation="horizontal">
+                <ImageView android:id="@+id/imageRectangleSeventySeven"
+                    android:layout_height="@dimen/_34pxh"
+                    android:layout_width="@dimen/_34pxh"
+                    android:scaleType="fitXY"
+                    android:src="@drawable/img_rectangle94"
+                    tools:ignore="ContentDescription" tools:src="@drawable/img_rectangle94"/>
+                <TextView android:ellipsize="end"
+                    android:id="@+id/txtFilter"
+                    android:layout_height="wrap_content"
+                    android:layout_marginBottom="@dimen/_5pxv"
+                    android:layout_marginStart="@dimen/_316pxh"
+                    android:layout_marginTop="@dimen/_3pxv"
+                    android:layout_weight="0.57"
+                    android:layout_width="0dp" android:singleLine="true"
+                    android:text="@{japaneseVM.japaneseModel.txtFilter}"
+                    style="@style/txtDMSansmedium19" tools:text="@string/lbl_filter"/>
+            </LinearLayout>
+        </androidx.appcompat.widget.Toolbar>
+        <LinearLayout android:gravity="start"
+            android:id="@+id/linearColumnlanguage"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/_17pxv"
+            android:layout_width="match_parent"
+            android:orientation="vertical" style="@style/groupStylewhite_A700">
+            <TextView android:ellipsize="end"
+                android:id="@+id/txtLanguage"
+                android:layout_height="wrap_content"
+                android:layout_marginEnd="@dimen/_34pxh"
+                android:layout_marginStart="@dimen/_34pxh"
+                android:layout_width="wrap_content"
+                android:singleLine="true"
+                android:text="@{japaneseVM.japaneseModel.txtLanguage}"
+                style="@style/txtDMSansbold36" tools:text="@string/lbl_japanese"/>
+            <TextView android:ellipsize="end"
+                android:id="@+id/txtRestaurantsCounter"
+                android:layout_height="wrap_content"
+                android:layout_marginEnd="@dimen/_29pxh"
+                android:layout_marginStart="@dimen/_29pxh"
+                android:layout_marginTop="@dimen/_14pxv"
+                android:layout_width="wrap_content"
+                android:singleLine="true"
+                android:text="@{japaneseVM.japaneseModel.txtRestaurantsCounter}"
+                style="@style/txtDMSansbold19_1" tools:text="@string/lbl_84_restaurants"/>
+            <TextView android:ellipsize="end"
+                android:id="@+id/txtFeatured"
+                android:layout_height="wrap_content"
+                android:layout_marginEnd="@dimen/_29pxh"
+                android:layout_marginStart="@dimen/_29pxh"
+                android:layout_marginTop="@dimen/_27pxv"
+                android:layout_width="wrap_content"
+                android:singleLine="true"
+                android:text="@{japaneseVM.japaneseModel.txtFeatured}"
+                style="@style/txtDMSansbold19_2" tools:text="@string/lbl_featured"/>
+            <TextView android:ellipsize="end"
+                android:id="@+id/txtSushiToday"
+                android:layout_height="wrap_content"
+                android:layout_marginEnd="@dimen/_29pxh"
+                android:layout_marginStart="@dimen/_29pxh"
+                android:layout_marginTop="@dimen/_14pxv"
+                android:layout_width="wrap_content"
+                android:singleLine="true"
+                android:text="@{japaneseVM.japaneseModel.txtSushiToday}"
+                style="@style/txtDMSansbold19" tools:text="@string/lbl_sushi_today"/>
+            <TextView android:ellipsize="end"
+                android:id="@+id/txtSushijapanF"
+                android:layout_height="wrap_content"
+                android:layout_marginEnd="@dimen/_29pxh"
+                android:layout_marginStart="@dimen/_29pxh"
+                android:layout_marginTop="@dimen/_1pxv"
+                android:layout_width="wrap_content"
+                android:singleLine="true"
+                android:text="@{japaneseVM.japaneseModel.txtSushijapanF}"
+                style="@style/txtDMSansmedium16" tools:text="@string/msg_sushi_japan_f"/>
+            <LinearLayout android:gravity="start"
+                android:id="@+id/linearRowtime"
+                android:layout_height="wrap_content"
+                android:layout_marginEnd="@dimen/_29pxh"
+                android:layout_marginStart="@dimen/_29pxh"
+                android:layout_marginTop="@dimen/_1pxv"
+                android:layout_width="match_parent" android:orientation="horizontal">
+                <FrameLayout android:id="@+id/frameStacktime"
+                    android:layout_height="@dimen/_19pxv"
+                    android:layout_marginTop="@dimen/_1pxv" android:layout_width="@dimen/_251pxh">
+                    <TextView android:ellipsize="end"
+                        android:gravity="top|start"
+                        android:id="@+id/txtTime"
+                        android:layout_gravity="start"
+                        android:layout_height="wrap_content"
+                        android:layout_marginEnd="@dimen/_10pxh"
+                        android:layout_width="match_parent"
+                        android:singleLine="true"
+                        android:text="@{japaneseVM.japaneseModel.txtTime}"
+                        style="@style/txtDMSansbold14" tools:text="@string/msg_order_from_1500"/>
+                    <ImageView
+                        android:id="@+id/imageRectangleSeventyEight"
+                        android:layout_gravity="top|end"
+                        android:layout_height="@dimen/_16pxh"
+                        android:layout_marginBottom="@dimen/_10pxv"
+                        android:layout_marginStart="@dimen/_10pxh"
+                        android:layout_width="@dimen/_16pxh"
+                        android:scaleType="fitXY"
+                        android:src="@drawable/img_rectangle78"
+                        tools:ignore="ContentDescription" tools:src="@drawable/img_rectangle78"/>
+                </FrameLayout>
+                <TextView android:ellipsize="end"
+                    android:id="@+id/txtForty"
+                    android:layout_height="wrap_content"
+                    android:layout_marginBottom="@dimen/_1pxv"
+                    android:layout_marginStart="@dimen/_5pxh"
+                    android:layout_weight="0.08"
+                    android:layout_width="0dp" android:singleLine="true"
+                    android:text="@{japaneseVM.japaneseModel.txtForty}"
+                    style="@style/txtDMSansbold14" tools:text="@string/lbl_4_0"/>
+            </LinearLayout>
+            <HorizontalScrollView android:fillViewport="true"
+                android:gravity="end"
+                android:id="@+id/horizontalScrollHorizontalscrollrectangleseventynine"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="@dimen/_10pxh"
+                android:layout_marginTop="@dimen/_16pxv"
+                android:layout_width="match_parent" android:scrollbars="none">
+                <LinearLayout
+                    android:id="@+id/linearRowrectangleseventynine"
+                    android:layout_height="wrap_content"
+                    android:layout_width="wrap_content" android:orientation="horizontal">
+                    <ImageView
+                        android:id="@+id/imageRectangleSeventyNine"
+                        android:layout_height="@dimen/_140pxh"
+                        android:layout_width="@dimen/_235pxh"
+                        android:scaleType="fitXY"
+                        cornerRadius="@{@dimen/_10pxh}"
+                        imageRes="@{@drawable/img_rectangle79_140x235}"
+                        tools:ignore="ContentDescription" tools:src="@drawable/img_rectangle79_140x235"/>
+                    <ImageView android:id="@+id/imageRectangleEighty"
+                        android:layout_height="@dimen/_140pxh"
+                        android:layout_marginStart="@dimen/_13pxh"
+                        android:layout_width="@dimen/_235pxh"
+                        android:scaleType="fitXY"
+                        cornerRadius="@{@dimen/_10pxh}"
+                        imageRes="@{@drawable/img_rectangle80_140x235}"
+                        tools:ignore="ContentDescription" tools:src="@drawable/img_rectangle80_140x235"/>
+                </LinearLayout>
+            </HorizontalScrollView>
+            <TextView android:ellipsize="end"
+                android:id="@+id/txtAllRestaurants"
+                android:layout_height="wrap_content"
+                android:layout_marginEnd="@dimen/_29pxh"
+                android:layout_marginStart="@dimen/_29pxh"
+                android:layout_marginTop="@dimen/_35pxv"
+                android:layout_width="wrap_content"
+                android:singleLine="true"
+                android:text="@{japaneseVM.japaneseModel.txtAllRestaurants}"
+                style="@style/txtDMSansbold17_1" tools:text="@string/lbl_all_restaurants"/>
+            <androidx.recyclerview.widget.RecyclerView
+                android:id="@+id/recyclerJapanese"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/_6pxv"
+                android:layout_width="match_parent"
+                android:orientation="vertical"
+                app:layoutManager="androidx.recyclerview.widget.LinearLayoutManager"
+                itemSpace="@{@dimen/_6pxh}" tools:itemCount="2" tools:listitem="@layout/row_japanese"/>
+        </LinearLayout>
+    </LinearLayout>
+</layout>

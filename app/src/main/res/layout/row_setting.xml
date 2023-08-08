@@ -1,0 +1,51 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<layout xmlns:android="http://schemas.android.com/apk/res/android" xmlns:tools="http://schemas.android.com/tools">
+    <data>
+        <variable name="settingRowModel" type="com.khushalsapplication.app.modules.setting.data.model.SettingRowModel"/>
+    </data>
+    <FrameLayout android:id="@+id/frameStackeditprofile"
+        android:layout_height="wrap_content" android:layout_width="match_parent">
+        <FrameLayout android:id="@+id/frameStackprofilephoto"
+            android:layout_gravity="bottom|start"
+            android:layout_height="@dimen/_75pxv"
+            android:layout_marginTop="@dimen/_10pxv"
+            android:layout_width="match_parent" style="@style/groupStylewhite_6">
+            <TextView android:ellipsize="end"
+                android:id="@+id/txtProfilephoto"
+                android:layout_gravity="bottom|start"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="@dimen/_12pxv"
+                android:layout_marginEnd="@dimen/_29pxh"
+                android:layout_marginStart="@dimen/_29pxh"
+                android:layout_marginTop="@dimen/_12pxv"
+                android:layout_width="wrap_content"
+                android:singleLine="true"
+                android:text="@{settingRowModel.txtProfilephoto}"
+                style="@style/txtDMSansregular20_1" tools:text="@string/lbl_profile_photo"/>
+            <TextView android:ellipsize="end"
+                android:gravity="top|start"
+                android:id="@+id/txtLanguageTwo"
+                android:layout_gravity="top|start"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="@dimen/_12pxv"
+                android:layout_marginEnd="@dimen/_30pxh"
+                android:layout_marginStart="@dimen/_30pxh"
+                android:layout_marginTop="@dimen/_12pxv"
+                android:layout_width="match_parent"
+                android:singleLine="true"
+                android:text="@{settingRowModel.txtLanguageTwo}"
+                style="@style/txtDMSansregular20_1" tools:text="@string/msg_change_your_nam"/>
+        </FrameLayout>
+        <TextView android:ellipsize="end"
+            android:id="@+id/txtEditprofile"
+            android:layout_gravity="top|start"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="@dimen/_10pxv"
+            android:layout_marginEnd="@dimen/_30pxh"
+            android:layout_marginStart="@dimen/_30pxh"
+            android:layout_width="wrap_content"
+            android:singleLine="true"
+            android:text="@{settingRowModel.txtEditprofile}"
+            style="@style/txtDMSansregular20_1" tools:text="@string/lbl_edit_profile"/>
+    </FrameLayout>
+</layout>

@@ -1,0 +1,28 @@
+package com.khushalsapplication.app.modules.japanese.`data`.model
+
+import com.khushalsapplication.app.R
+import com.khushalsapplication.app.appcomponents.di.MyApp
+import kotlin.String
+
+data class JapaneseRowModel(
+  /**
+   * TODO Replace with dynamic value
+   */
+  var txtPokeOrigin: String? = MyApp.getInstance().resources.getString(R.string.lbl_poke_origin)
+  ,
+  /**
+   * TODO Replace with dynamic value
+   */
+  var txtFortyNine: String? = MyApp.getInstance().resources.getString(R.string.lbl_4_9)
+  ,
+  /**
+   * TODO Replace with dynamic value
+   */
+  var txtAsianfushion: String? = MyApp.getInstance().resources.getString(R.string.msg_asian_fushion)
+  ,
+  /**
+   * TODO Replace with dynamic value
+   */
+  var txtTimeOne: String? = MyApp.getInstance().resources.getString(R.string.msg_order_from_500r)
+
+)

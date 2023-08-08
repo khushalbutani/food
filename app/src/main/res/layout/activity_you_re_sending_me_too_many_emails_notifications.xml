@@ -1,0 +1,110 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<layout xmlns:android="http://schemas.android.com/apk/res/android" xmlns:tools="http://schemas.android.com/tools">
+    <data>
+        <variable name="youReSendingMeTooManyEmailsNotificationsVM" type="com.khushalsapplication.app.modules.youresendingmetoomanyemailsnotifications.data.viewmodel.YouReSendingMeTooManyEmailsNotificationsVM"/>
+    </data>
+    <LinearLayout android:gravity="center_horizontal"
+        android:id="@+id/linearColumnrectangleninetyfour"
+        android:layout_height="match_parent"
+        android:layout_marginBottom="@dimen/_463pxv"
+        android:layout_marginTop="@dimen/_9pxv"
+        android:layout_width="match_parent"
+        android:orientation="vertical" style="@style/groupStylewhite_A700">
+        <ScrollView android:clipToPadding="false"
+            android:fillViewport="true" android:gravity="start"
+            android:id="@+id/scrollViewScrollview"
+            android:layout_height="0dp" android:layout_weight="1" android:layout_width="match_parent">
+            <LinearLayout android:gravity="start"
+                android:id="@+id/linearYouresending"
+                android:layout_height="wrap_content"
+                android:layout_width="match_parent" android:orientation="vertical">
+                <ImageView android:id="@+id/imageRectangleNinetyFour"
+                    android:layout_height="@dimen/_34pxh"
+                    android:layout_marginEnd="@dimen/_13pxh"
+                    android:layout_marginStart="@dimen/_13pxh"
+                    android:layout_width="@dimen/_34pxh"
+                    android:scaleType="fitXY"
+                    android:src="@drawable/img_rectangle94"
+                    tools:ignore="ContentDescription" tools:src="@drawable/img_rectangle94"/>
+                <TextView android:id="@+id/txtToomanycommun"
+                    android:layout_height="wrap_content"
+                    android:layout_marginEnd="@dimen/_16pxh"
+                    android:layout_marginStart="@dimen/_16pxh"
+                    android:layout_marginTop="@dimen/_11pxv"
+                    android:layout_width="match_parent"
+                    android:text="@{youReSendingMeTooManyEmailsNotificationsVM.youReSendingMeTooManyEmailsNotificationsModel.txtToomanycommun}"
+                    style="@style/txtDMSansregular27" tools:text="@string/msg_too_many_commun"/>
+                <TextView android:id="@+id/txtDescription"
+                    android:layout_height="wrap_content"
+                    android:layout_marginEnd="@dimen/_16pxh"
+                    android:layout_marginStart="@dimen/_16pxh"
+                    android:layout_width="match_parent"
+                    android:text="@{youReSendingMeTooManyEmailsNotificationsVM.youReSendingMeTooManyEmailsNotificationsModel.txtDescription}"
+                    style="@style/txtDMSansmedium16_4" tools:text="@string/msg_to_receive_fewe"/>
+                <LinearLayout android:id="@+id/linearRoweditnotificati"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="@dimen/_5pxh"
+                    android:layout_marginTop="@dimen/_23pxv"
+                    android:layout_width="match_parent"
+                    android:orientation="horizontal" style="@style/groupStylewhite_4">
+                    <TextView android:ellipsize="end"
+                        android:id="@+id/txtEditnotificati"
+                        android:layout_height="wrap_content"
+                        android:layout_marginBottom="@dimen/_16pxv"
+                        android:layout_marginStart="@dimen/_16pxh"
+                        android:layout_marginTop="@dimen/_18pxv"
+                        android:layout_weight="0.94"
+                        android:layout_width="0dp"
+                        android:singleLine="true"
+                        android:text="@{youReSendingMeTooManyEmailsNotificationsVM.youReSendingMeTooManyEmailsNotificationsModel.txtEditnotificati}"
+                        style="@style/txtDMSansregular18_1" tools:text="@string/msg_edit_notificati"/>
+                    <ImageView android:id="@+id/imageRectangle274"
+                        android:layout_height="@dimen/_14pxh"
+                        android:layout_marginBottom="@dimen/_23pxv"
+                        android:layout_marginEnd="@dimen/_11pxh"
+                        android:layout_marginStart="@dimen/_201pxh"
+                        android:layout_marginTop="@dimen/_22pxv"
+                        android:layout_width="@dimen/_11pxh"
+                        android:scaleType="fitXY"
+                        android:src="@drawable/img_rectangle273"
+                        tools:ignore="ContentDescription" tools:src="@drawable/img_rectangle273"/>
+                </LinearLayout>
+                <TextView android:id="@+id/txtWouldyourathe"
+                    android:layout_height="wrap_content"
+                    android:layout_marginEnd="@dimen/_17pxh"
+                    android:layout_marginStart="@dimen/_17pxh"
+                    android:layout_marginTop="@dimen/_27pxv"
+                    android:layout_width="match_parent"
+                    android:text="@{youReSendingMeTooManyEmailsNotificationsVM.youReSendingMeTooManyEmailsNotificationsModel.txtWouldyourathe}"
+                    style="@style/txtDMSansregular27" tools:text="@string/msg_would_you_rathe"/>
+                <LinearLayout android:id="@+id/linearRowlanguage"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="@dimen/_16pxv"
+                    android:layout_width="match_parent"
+                    android:orientation="horizontal" style="@style/groupStylewhite_4">
+                    <TextView android:ellipsize="end"
+                        android:id="@+id/txtLanguage"
+                        android:layout_height="wrap_content"
+                        android:layout_marginBottom="@dimen/_30pxv"
+                        android:layout_marginStart="@dimen/_16pxh"
+                        android:layout_marginTop="@dimen/_4pxv"
+                        android:layout_weight="0.94"
+                        android:layout_width="0dp"
+                        android:singleLine="true"
+                        android:text="@{youReSendingMeTooManyEmailsNotificationsVM.youReSendingMeTooManyEmailsNotificationsModel.txtLanguage}"
+                        style="@style/txtDMSansregular18_1" tools:text="@string/msg_continue_with_d"/>
+                    <ImageView android:id="@+id/imageRectangle278"
+                        android:layout_height="@dimen/_14pxh"
+                        android:layout_marginBottom="@dimen/_29pxv"
+                        android:layout_marginEnd="@dimen/_15pxh"
+                        android:layout_marginStart="@dimen/_215pxh"
+                        android:layout_marginTop="@dimen/_16pxv"
+                        android:layout_width="@dimen/_11pxh"
+                        android:scaleType="fitXY"
+                        android:src="@drawable/img_rectangle273"
+                        tools:ignore="ContentDescription" tools:src="@drawable/img_rectangle273"/>
+                </LinearLayout>
+            </LinearLayout>
+        </ScrollView>
+    </LinearLayout>
+</layout>

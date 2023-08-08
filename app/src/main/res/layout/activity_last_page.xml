@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<layout xmlns:android="http://schemas.android.com/apk/res/android">
+    <data>
+        <variable name="lastPageVM" type="com.khushalsapplication.app.modules.lastpage.data.viewmodel.LastPageVM"/>
+    </data>
+    <View android:background="@color/yellow_A700"
+        android:id="@+id/viewLastpage"
+        android:layout_height="match_parent" android:layout_width="match_parent"/>
+</layout>

@@ -1,0 +1,46 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<layout xmlns:android="http://schemas.android.com/apk/res/android" xmlns:tools="http://schemas.android.com/tools">
+    <data>
+        <variable name="profileRowModel" type="com.khushalsapplication.app.modules.profile.data.model.ProfileRowModel"/>
+    </data>
+    <LinearLayout android:id="@+id/linearRowmyhome"
+        android:layout_height="wrap_content"
+        android:layout_width="match_parent"
+        android:orientation="horizontal" style="@style/groupStylewhite_2">
+        <LinearLayout android:gravity="start"
+            android:id="@+id/linearColumnmyhome"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="@dimen/_6pxv"
+            android:layout_marginStart="@dimen/_26pxh"
+            android:layout_marginTop="@dimen/_10pxv"
+            android:layout_weight="0.94" android:layout_width="0dp" android:orientation="vertical">
+            <TextView android:ellipsize="end"
+                android:id="@+id/txtMyHome"
+                android:layout_height="wrap_content"
+                android:layout_marginEnd="@dimen/_10pxh"
+                android:layout_width="wrap_content"
+                android:singleLine="true"
+                android:text="@{profileRowModel.txtMyHome}"
+                style="@style/txtDMSansmedium13" tools:text="@string/lbl_my_home"/>
+            <TextView android:ellipsize="end"
+                android:id="@+id/txtLanguage"
+                android:layout_height="wrap_content"
+                android:layout_marginEnd="@dimen/_10pxh"
+                android:layout_marginStart="@dimen/_1pxh"
+                android:layout_marginTop="@dimen/_2pxv"
+                android:layout_width="match_parent"
+                android:singleLine="true"
+                android:text="@{profileRowModel.txtLanguage}"
+                style="@style/txtDMSansregular16_1" tools:text="@string/msg_95_kelampok_kas"/>
+        </LinearLayout>
+        <ImageView android:id="@+id/imageRectangleThirtyOne"
+            android:layout_height="@dimen/_24pxh"
+            android:layout_marginBottom="@dimen/_15pxv"
+            android:layout_marginEnd="@dimen/_32pxh"
+            android:layout_marginTop="@dimen/_18pxv"
+            android:layout_width="@dimen/_24pxh"
+            android:scaleType="fitXY"
+            android:src="@drawable/img_rectangle13"
+            tools:ignore="ContentDescription" tools:src="@drawable/img_rectangle13"/>
+    </LinearLayout>
+</layout>

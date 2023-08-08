@@ -1,0 +1,260 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<manifest package="com.khushalsapplication.app" xmlns:android="http://schemas.android.com/apk/res/android">
+    <uses-permission android:name="android.permission.INTERNET"/>
+    <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE"/>
+    <application android:allowBackup="false"
+        android:icon="@mipmap/ic_launcher"
+        android:label="@string/app_name" android:largeHeap="true"
+        android:name="com.khushalsapplication.app.appcomponents.di.MyApp"
+        android:roundIcon="@mipmap/ic_launcher_round"
+        android:supportsRtl="true" android:theme="@style/Theme.MyApp" android:usesCleartextTraffic="true">
+        <meta-data android:name="com.facebook.sdk.ApplicationId" android:value="@string/facebook_app_id"/>
+        <meta-data android:name="com.facebook.sdk.ClientToken" android:value="@string/facebook_client_token"/>
+        <activity
+            android:configChanges="keyboard|keyboardHidden|screenLayout|screenSize|orientation"
+            android:label="@string/app_name" android:name="com.facebook.FacebookActivity"/>
+        <activity android:exported="true" android:name="com.facebook.CustomTabActivity">
+            <intent-filter>
+                <action android:name="android.intent.action.VIEW"/>
+                <category android:name="android.intent.category.DEFAULT"/>
+                <category android:name="android.intent.category.BROWSABLE"/>
+                <data android:scheme="@string/fb_login_protocol_scheme"/>
+            </intent-filter>
+        </activity>
+        <activity
+            android:name="com.khushalsapplication.app.modules.sliders.ui.SlidersActivity" android:screenOrientation="portrait"/>
+        <activity
+            android:name="com.khushalsapplication.app.modules.search.ui.SearchActivity" android:screenOrientation="portrait"/>
+        <activity
+            android:name="com.khushalsapplication.app.modules.tteokbokki.ui.TteokbokkiActivity" android:screenOrientation="portrait"/>
+        <activity
+            android:name="com.khushalsapplication.app.modules.trendingthisweek.ui.TrendingThisWeekActivity" android:screenOrientation="portrait"/>
+        <activity
+            android:name="com.khushalsapplication.app.modules.spicysalad.ui.SpicySaladActivity" android:screenOrientation="portrait"/>
+        <activity
+            android:name="com.khushalsapplication.app.modules.starbuks.ui.StarbuksActivity" android:screenOrientation="portrait"/>
+        <activity
+            android:name="com.khushalsapplication.app.modules.frenchfries.ui.FrenchFriesActivity" android:screenOrientation="portrait"/>
+        <activity
+            android:name="com.khushalsapplication.app.modules.continuewithdeletionone.ui.ContinueWithDeletionOneActivity" android:screenOrientation="portrait"/>
+        <activity
+            android:name="com.khushalsapplication.app.modules.singapore.ui.SingaporeActivity" android:screenOrientation="portrait"/>
+        <activity
+            android:name="com.khushalsapplication.app.modules.spain.ui.SpainActivity" android:screenOrientation="portrait"/>
+        <activity
+            android:name="com.khushalsapplication.app.modules.biriyani.ui.BiriyaniActivity" android:screenOrientation="portrait"/>
+        <activity
+            android:name="com.khushalsapplication.app.modules.notificationsetting.ui.NotificationSettingActivity" android:screenOrientation="portrait"/>
+        <activity
+            android:name="com.khushalsapplication.app.modules.nearby.ui.NearbyActivity" android:screenOrientation="portrait"/>
+        <activity
+            android:name="com.khushalsapplication.app.modules.mozzacheese.ui.MozzaCheeseActivity" android:screenOrientation="portrait"/>
+        <activity
+            android:name="com.khushalsapplication.app.modules.italian.ui.ItalianActivity" android:screenOrientation="portrait"/>
+        <activity
+            android:name="com.khushalsapplication.app.modules.corndogs.ui.CornDogsActivity" android:screenOrientation="portrait"/>
+        <activity
+            android:name="com.khushalsapplication.app.modules.changeemail.ui.ChangeEmailActivity" android:screenOrientation="portrait"/>
+        <activity
+            android:name="com.khushalsapplication.app.modules.pizzaroll.ui.PizzaRollActivity" android:screenOrientation="portrait"/>
+        <activity
+            android:name="com.khushalsapplication.app.modules.editnotificationsettings.ui.EditNotificationSettingsActivity" android:screenOrientation="portrait"/>
+        <activity
+            android:name="com.khushalsapplication.app.modules.misoramensoup.ui.MisoRamenSoupActivity" android:screenOrientation="portrait"/>
+        <activity
+            android:name="com.khushalsapplication.app.modules.riverbamboo.ui.RiverBambooActivity" android:screenOrientation="portrait"/>
+        <activity
+            android:name="com.khushalsapplication.app.modules.pavbhaji.ui.PavBhajiActivity" android:screenOrientation="portrait"/>
+        <activity
+            android:name="com.khushalsapplication.app.modules.editprofile.ui.EditProfileActivity" android:screenOrientation="portrait"/>
+        <activity
+            android:name="com.khushalsapplication.app.modules.successfulpayment.ui.SuccessfulPaymentActivity" android:screenOrientation="portrait"/>
+        <activity
+            android:name="com.khushalsapplication.app.modules.currynoodlesoup.ui.CurryNoodleSoupActivity" android:screenOrientation="portrait"/>
+        <activity
+            android:name="com.khushalsapplication.app.modules.chooselocation.ui.ChooseLocationActivity" android:screenOrientation="portrait"/>
+        <activity
+            android:name="com.khushalsapplication.app.modules.favorites.ui.FavoritesActivity" android:screenOrientation="portrait"/>
+        <activity
+            android:name="com.khushalsapplication.app.modules.natillareceta.ui.NatillaRecetaActivity" android:screenOrientation="portrait"/>
+        <activity
+            android:name="com.khushalsapplication.app.modules.brooksmotor.ui.BrooksMotorActivity" android:screenOrientation="portrait"/>
+        <activity
+            android:name="com.khushalsapplication.app.modules.friedrice.ui.FriedRiceActivity" android:screenOrientation="portrait"/>
+        <activity
+            android:name="com.khushalsapplication.app.modules.springroll.ui.SpringRollActivity" android:screenOrientation="portrait"/>
+        <activity
+            android:name="com.khushalsapplication.app.modules.orders.ui.OrdersActivity" android:screenOrientation="portrait"/>
+        <activity
+            android:name="com.khushalsapplication.app.modules.ballygungeplace.ui.BallygungePlaceActivity" android:screenOrientation="portrait"/>
+        <activity
+            android:name="com.khushalsapplication.app.modules.checkout.ui.CheckOutActivity" android:screenOrientation="portrait"/>
+        <activity
+            android:name="com.khushalsapplication.app.modules.successfullydeleted.ui.SuccessfullyDeletedActivity" android:screenOrientation="portrait"/>
+        <activity
+            android:name="com.khushalsapplication.app.modules.chowmein.ui.ChowMeinActivity" android:screenOrientation="portrait"/>
+        <activity
+            android:name="com.khushalsapplication.app.modules.notifications.ui.NotificationsActivity" android:screenOrientation="portrait"/>
+        <activity
+            android:name="com.khushalsapplication.app.modules.browse.ui.BrowseActivity" android:screenOrientation="portrait"/>
+        <activity
+            android:name="com.khushalsapplication.app.modules.japanese.ui.JapaneseActivity" android:screenOrientation="portrait"/>
+        <activity
+            android:name="com.khushalsapplication.app.modules.cuisines.ui.CuisinesActivity" android:screenOrientation="portrait"/>
+        <activity
+            android:name="com.khushalsapplication.app.modules.summitrestaurant.ui.SummitRestaurantActivity" android:screenOrientation="portrait"/>
+        <activity
+            android:name="com.khushalsapplication.app.modules.imworriedaboutmyprivacy.ui.IMWorriedAboutMyPrivacyActivity" android:screenOrientation="portrait"/>
+        <activity
+            android:name="com.khushalsapplication.app.modules.delivery.ui.DeliveryActivity" android:screenOrientation="portrait"/>
+        <activity
+            android:name="com.khushalsapplication.app.modules.introthree.ui.IntroThreeActivity" android:screenOrientation="portrait"/>
+        <activity
+            android:name="com.khushalsapplication.app.modules.focaccia.ui.FocacciaActivity" android:screenOrientation="portrait"/>
+        <activity
+            android:name="com.khushalsapplication.app.modules.churroicecreambowls.ui.ChurroIceCreamBowlsActivity" android:screenOrientation="portrait"/>
+        <activity
+            android:name="com.khushalsapplication.app.modules.ad1.ui.Ad1Activity" android:screenOrientation="portrait"/>
+        <activity
+            android:name="com.khushalsapplication.app.modules.benihana.ui.BenihanaActivity" android:screenOrientation="portrait"/>
+        <activity
+            android:name="com.khushalsapplication.app.modules.brazil.ui.BrazilActivity" android:screenOrientation="portrait"/>
+        <activity
+            android:name="com.khushalsapplication.app.modules.pokeorigin.ui.PokeOriginActivity" android:screenOrientation="portrait"/>
+        <activity
+            android:name="com.khushalsapplication.app.modules.idontwanttouselocalfoodanymore.ui.IDonTWantToUseLocalFoodAnymoreActivity" android:screenOrientation="portrait"/>
+        <activity
+            android:name="com.khushalsapplication.app.modules.continuewithdeletionthree.ui.ContinueWithDeletionThreeActivity" android:screenOrientation="portrait"/>
+        <activity
+            android:name="com.khushalsapplication.app.modules.rotiprata.ui.RotiPrataActivity" android:screenOrientation="portrait"/>
+        <activity
+            android:name="com.khushalsapplication.app.modules.continuewithdeletiontwo.ui.ContinueWithDeletionTwoActivity" android:screenOrientation="portrait"/>
+        <activity
+            android:name="com.khushalsapplication.app.modules.contactlocalfoodsupport.ui.ContactLocalfoodSupportActivity" android:screenOrientation="portrait"/>
+        <activity
+            android:name="com.khushalsapplication.app.modules.onioncheeseone.ui.OnionCheeseOneActivity" android:screenOrientation="portrait"/>
+        <activity
+            android:name="com.khushalsapplication.app.modules.boloderolo.ui.BoloDeRoloActivity" android:screenOrientation="portrait"/>
+        <activity
+            android:name="com.khushalsapplication.app.modules.american.ui.AmericanActivity" android:screenOrientation="portrait"/>
+        <activity
+            android:name="com.khushalsapplication.app.modules.setlocationpage.ui.SetLocationPageActivity" android:screenOrientation="portrait"/>
+        <activity
+            android:name="com.khushalsapplication.app.modules.theembassy.ui.TheEmbassyActivity" android:screenOrientation="portrait"/>
+        <activity
+            android:name="com.khushalsapplication.app.modules.signup.ui.SignUpActivity" android:screenOrientation="portrait"/>
+        <activity
+            android:name="com.khushalsapplication.app.modules.momos.ui.MomosActivity" android:screenOrientation="portrait"/>
+        <activity
+            android:name="com.khushalsapplication.app.modules.soupbeetvegy.ui.SoupBeetVegyActivity" android:screenOrientation="portrait"/>
+        <activity
+            android:name="com.khushalsapplication.app.modules.introtwo.ui.IntroTwoActivity" android:screenOrientation="portrait"/>
+        <activity
+            android:name="com.khushalsapplication.app.modules.clubsandwich.ui.ClubSandwichActivity" android:screenOrientation="portrait"/>
+        <activity
+            android:name="com.khushalsapplication.app.modules.muttonkeemasamosa.ui.MuttonKeemaSamosaActivity" android:screenOrientation="portrait"/>
+        <activity
+            android:name="com.khushalsapplication.app.modules.burger.ui.BurgerActivity" android:screenOrientation="portrait"/>
+        <activity
+            android:name="com.khushalsapplication.app.modules.continuewithdeletion.ui.ContinueWithDeletionActivity" android:screenOrientation="portrait"/>
+        <activity
+            android:name="com.khushalsapplication.app.modules.hotdog.ui.HotDogActivity" android:screenOrientation="portrait"/>
+        <activity
+            android:name="com.khushalsapplication.app.modules.imusingadifferentaccount.ui.IMUsingADifferentAccountActivity" android:screenOrientation="portrait"/>
+        <activity
+            android:name="com.khushalsapplication.app.modules.chinese.ui.ChineseActivity" android:screenOrientation="portrait"/>
+        <activity
+            android:name="com.khushalsapplication.app.modules.amethyst.ui.AmethystActivity" android:screenOrientation="portrait"/>
+        <activity
+            android:name="com.khushalsapplication.app.modules.singin.ui.SingInActivity" android:screenOrientation="portrait"/>
+        <activity
+            android:name="com.khushalsapplication.app.modules.profile.ui.ProfileActivity" android:screenOrientation="portrait"/>
+        <activity
+            android:name="com.khushalsapplication.app.modules.mexican.ui.MexicanActivity" android:screenOrientation="portrait"/>
+        <activity
+            android:name="com.khushalsapplication.app.modules.kimchi.ui.KimchiActivity" android:screenOrientation="portrait"/>
+        <activity
+            android:name="com.khushalsapplication.app.modules.onioncheese.ui.OnionCheeseActivity" android:screenOrientation="portrait"/>
+        <activity
+            android:name="com.khushalsapplication.app.modules.ad.ui.AdActivity" android:screenOrientation="portrait"/>
+        <activity
+            android:name="com.khushalsapplication.app.modules.delete.ui.DeleteActivity" android:screenOrientation="portrait"/>
+        <activity
+            android:name="com.khushalsapplication.app.modules.habanerostacogrill.ui.HabanerosTacoGrillActivity" android:screenOrientation="portrait"/>
+        <activity
+            android:name="com.khushalsapplication.app.modules.sandwich.ui.SandwichActivity" android:screenOrientation="portrait"/>
+        <activity
+            android:name="com.khushalsapplication.app.modules.nigirisushi.ui.NigiriSushiActivity" android:screenOrientation="portrait"/>
+        <activity
+            android:name="com.khushalsapplication.app.modules.cheesybeefpasta.ui.CheesyBeefPastaActivity" android:screenOrientation="portrait"/>
+        <activity
+            android:name="com.khushalsapplication.app.modules.thai.ui.ThaiActivity" android:screenOrientation="portrait"/>
+        <activity
+            android:name="com.khushalsapplication.app.modules.pasta.ui.PastaActivity" android:screenOrientation="portrait"/>
+        <activity
+            android:name="com.khushalsapplication.app.modules.moltenchocolatecake.ui.MoltenChocolateCakeActivity" android:screenOrientation="portrait"/>
+        <activity
+            android:name="com.khushalsapplication.app.modules.pavbhajione.ui.PavBhajiOneActivity" android:screenOrientation="portrait"/>
+        <activity
+            android:name="com.khushalsapplication.app.modules.deleteaccount.ui.DeleteAccountActivity" android:screenOrientation="portrait"/>
+        <activity
+            android:name="com.khushalsapplication.app.modules.thefattybao.ui.TheFattyBaoActivity" android:screenOrientation="portrait"/>
+        <activity
+            android:name="com.khushalsapplication.app.modules.penanglaksa.ui.PenangLaksaActivity" android:screenOrientation="portrait"/>
+        <activity
+            android:name="com.khushalsapplication.app.modules.thebombaycanteen.ui.TheBombayCanteenActivity" android:screenOrientation="portrait"/>
+        <activity
+            android:name="com.khushalsapplication.app.modules.other.ui.OtherActivity" android:screenOrientation="portrait"/>
+        <activity
+            android:name="com.khushalsapplication.app.modules.tirmisu.ui.TirmisuActivity" android:screenOrientation="portrait"/>
+        <activity
+            android:name="com.khushalsapplication.app.modules.filter.ui.FilterActivity" android:screenOrientation="portrait"/>
+        <activity
+            android:name="com.khushalsapplication.app.modules.forgotpassword.ui.ForgotPasswordActivity" android:screenOrientation="portrait"/>
+        <activity
+            android:name="com.khushalsapplication.app.modules.cinnamonrollbunnies.ui.CinnamonRollBunniesActivity" android:screenOrientation="portrait"/>
+        <activity
+            android:name="com.khushalsapplication.app.modules.aish.ui.AishActivity" android:screenOrientation="portrait"/>
+        <activity
+            android:name="com.khushalsapplication.app.modules.youresendingmetoomanyemailsnotifications.ui.YouReSendingMeTooManyEmailsNotificationsActivity" android:screenOrientation="portrait"/>
+        <activity
+            android:name="com.khushalsapplication.app.modules.muffintinminiquiche.ui.MuffinTinMiniQuicheActivity" android:screenOrientation="portrait"/>
+        <activity
+            android:name="com.khushalsapplication.app.modules.satay.ui.SatayActivity" android:screenOrientation="portrait"/>
+        <activity
+            android:name="com.khushalsapplication.app.modules.theappisnotworkingproperly.ui.TheAppIsNotWorkingProperlyActivity" android:screenOrientation="portrait"/>
+        <activity
+            android:name="com.khushalsapplication.app.modules.addaplace.ui.AddAPlaceActivity" android:screenOrientation="portrait"/>
+        <activity
+            android:name="com.khushalsapplication.app.modules.setting.ui.SettingActivity" android:screenOrientation="portrait"/>
+        <activity
+            android:name="com.khushalsapplication.app.modules.lastpage.ui.LastPageActivity" android:screenOrientation="portrait"/>
+        <activity
+            android:name="com.khushalsapplication.app.modules.collections.ui.CollectionsActivity" android:screenOrientation="portrait"/>
+        <activity
+            android:name="com.khushalsapplication.app.modules.brigadeiro.ui.BrigadeiroActivity" android:screenOrientation="portrait"/>
+        <activity
+            android:name="com.khushalsapplication.app.modules.accountsettings.ui.AccountSettingsActivity" android:screenOrientation="portrait"/>
+        <activity
+            android:name="com.khushalsapplication.app.modules.garlicbread.ui.GarlicBreadActivity" android:screenOrientation="portrait"/>
+        <activity
+            android:name="com.khushalsapplication.app.modules.order.ui.OrderActivity" android:screenOrientation="portrait"/>
+        <activity
+            android:name="com.khushalsapplication.app.modules.korean.ui.KoreanActivity" android:screenOrientation="portrait"/>
+        <activity
+            android:name="com.khushalsapplication.app.modules.indian.ui.IndianActivity" android:screenOrientation="portrait"/>
+        <activity
+            android:name="com.khushalsapplication.app.modules.pizza.ui.PizzaActivity" android:screenOrientation="portrait"/>
+        <activity
+            android:name="com.khushalsapplication.app.modules.reportissueswiththeapp.ui.ReportIssuesWithTheAppActivity" android:screenOrientation="portrait"/>
+        <activity android:exported="true"
+            android:name="com.khushalsapplication.app.modules.localfood.ui.LocalfoodActivity" android:screenOrientation="portrait">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN"/>
+                <category android:name="android.intent.category.LAUNCHER"/>
+            </intent-filter>
+        </activity>
+        <activity
+            android:name="com.khushalsapplication.app.modules.placesyouveadded.ui.PlacesYouVeAddedActivity" android:screenOrientation="portrait"/>
+    </application>
+</manifest>

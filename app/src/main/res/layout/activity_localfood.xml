@@ -1,0 +1,69 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<layout xmlns:android="http://schemas.android.com/apk/res/android" xmlns:tools="http://schemas.android.com/tools">
+    <data>
+        <variable name="localfoodVM" type="com.khushalsapplication.app.modules.localfood.data.viewmodel.LocalfoodVM"/>
+    </data>
+    <LinearLayout android:gravity="center_horizontal"
+        android:id="@+id/linearColumnlocalfood"
+        android:layout_height="match_parent"
+        android:layout_marginBottom="@dimen/_67pxv"
+        android:layout_marginEnd="@dimen/_8pxh"
+        android:layout_marginStart="@dimen/_56pxh"
+        android:layout_marginTop="@dimen/_431pxv"
+        android:layout_width="match_parent"
+        android:orientation="vertical" style="@style/groupStyleyellow_A700">
+        <ScrollView android:clipToPadding="false"
+            android:fillViewport="true" android:gravity="start"
+            android:id="@+id/scrollViewScrollview"
+            android:layout_height="0dp" android:layout_weight="1" android:layout_width="match_parent">
+            <LinearLayout android:id="@+id/linearLocalfood"
+                android:layout_height="wrap_content"
+                android:layout_width="match_parent" android:orientation="vertical">
+                <FrameLayout android:id="@+id/frameStacklocalfood"
+                    android:layout_gravity="start"
+                    android:layout_height="@dimen/_85pxv"
+                    android:layout_marginEnd="@dimen/_10pxh" android:layout_width="@dimen/_310pxh">
+                    <TextView android:ellipsize="end"
+                        android:gravity="top|start"
+                        android:id="@+id/txtLocalfood"
+                        android:layout_gravity="start"
+                        android:layout_height="wrap_content"
+                        android:layout_width="match_parent"
+                        android:singleLine="true"
+                        android:text="@{localfoodVM.localfoodModel.txtLocalfood}"
+                        style="@style/txtDMSansbold65" tools:text="@string/lbl_localfood"/>
+                    <LinearLayout
+                        android:id="@+id/linearRowrectangletwo"
+                        android:layout_gravity="bottom|end"
+                        android:layout_height="wrap_content"
+                        android:layout_marginBottom="@dimen/_17pxv"
+                        android:layout_marginEnd="@dimen/_81pxh"
+                        android:layout_marginStart="@dimen/_81pxh"
+                        android:layout_marginTop="@dimen/_17pxv"
+                        android:layout_width="wrap_content" android:orientation="horizontal">
+                        <View android:background="@color/black_900"
+                            android:id="@+id/viewRectangleTwo"
+                            android:layout_height="@dimen/_1pxh" android:layout_width="@dimen/_3pxh"/>
+                        <View android:background="@color/black_900"
+                            android:id="@+id/viewRectangleThree"
+                            android:layout_height="@dimen/_1pxh"
+                            android:layout_marginStart="@dimen/_25pxh" android:layout_width="@dimen/_3pxh"/>
+                    </LinearLayout>
+                </FrameLayout>
+                <TextView android:ellipsize="end"
+                    android:id="@+id/txtGroupSixtyOne"
+                    android:layout_gravity="end"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="@dimen/_10pxh"
+                    android:layout_marginTop="@dimen/_317pxv"
+                    android:layout_width="wrap_content"
+                    android:paddingBottom="@dimen/_1pxv"
+                    android:paddingStart="@dimen/_19pxh"
+                    android:paddingTop="@dimen/_5pxv"
+                    android:singleLine="true"
+                    android:text="@{localfoodVM.localfoodModel.txtGroupSixtyOne}"
+                    style="@style/txtOutline" tools:text="@string/lbl_skip"/>
+            </LinearLayout>
+        </ScrollView>
+    </LinearLayout>
+</layout>
